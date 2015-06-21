@@ -1,0 +1,25 @@
+#!/bin/csh -f
+###########################################
+# Script file to run the flow 
+# 
+###########################################
+#
+# Command line for ngdbuild
+#
+ngdbuild -ise ../__xps/ise/system.ise -p xc5vfx130tff1738-1 -nt timestamp -bm system.bmm "/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/implementation/system.ngc" -uc system.ucf system.ngd 
+
+#
+# Command line for map
+#
+map -ise ../__xps/ise/system.ise -o system_map.ncd -w -pr b -ol high -timing -detail system.ngd system.pcf 
+
+#
+# Command line for par
+#
+par -ise ../__xps/ise/system.ise -w -ol high system_map.ncd system.ncd system.pcf 
+
+#
+# Command line for post_par_trce
+#
+trce -ise ../__xps/ise/system.ise -e 3 -xml system.twx system.ncd system.pcf 
+

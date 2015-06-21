@@ -1,0 +1,92 @@
+Release 11.5 - libgen Xilinx EDK 11.5 Build EDK_LS5.70
+ (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -mhs system.mhs -p xc5vfx130tff1738-1 -msg
+__xps/ise/xmsgprops.lst system.mss 
+
+Release 11.5 - psf2Edward EDK_LS5.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+WARNING:EDK:3400 - Use of the repository located at
+   /proj/sw/Xilinx/11.1/edk_user_repository/ 
+   (equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+   It is recommended that you use Global SearchPath preference to specify search
+   paths that apply to all the projects.
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:plb_v46_0 -
+/proj/users/hmnguyen/EDKproject/qmfir_2new/system.mhs line 136 - 1 master(s) :
+10 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:HostMiimRdy CONNECTOR:host_mii_rdy -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 264 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:HostRdData CONNECTOR:host_rd_data -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 265 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2099 - PORT:HostMiimSel CONNECTOR:host_mii_sel -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 266 - floating connection!
+WARNING:EDK:2099 - PORT:HostReq CONNECTOR:host_req -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 267 - floating connection!
+WARNING:EDK:2099 - PORT:HostAddr CONNECTOR:host_addr -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 268 - floating connection!
+WARNING:EDK:2099 - PORT:HostEmac1Sel CONNECTOR:host_emac1_sel -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 269 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+WARNING:  xps_sysmon_adc_0 (xps_sysmon_adc) - Interrupt control logic is
+included, but IP2INTC_Irpt port not connected.
+
+Did not find device sumary in qmfir_0's synthesis log file
+INFO:EDK:1740 - List of peripherals connected to processor instance ppc440_0: 
+  - DDR_SDRAM_0
+  - Hard_Ethernet_MAC
+  - Hard_Ethernet_MAC_fifo
+  - RS232_0
+  - qmfir_0
+  - xps_bram_if_cntlr_0
+  - xps_intc_0
+  - xps_sysmon_adc_0
+  - xps_timer_0
+
+-- Generating libraries for processor: ppc440_0 --
+
+
+Staging source files.
+Running DRCs.
+Runnning DRC for lwIP library... 
+
+lwIP can be used with the following EMAC peripherals found in your system:
+Hard_Ethernet_MAC
+Running generate.
+Running post_generate.
+Running include - 'gmake -s include "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS=-mcpu=440  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'gmake -s libs "COMPILER=powerpc-eabi-gcc"
+"ARCHIVER=powerpc-eabi-ar" "COMPILER_FLAGS=-mcpu=440  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+Running execs_generate.

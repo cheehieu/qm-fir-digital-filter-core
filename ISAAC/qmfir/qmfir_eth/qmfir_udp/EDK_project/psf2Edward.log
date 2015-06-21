@@ -1,0 +1,53 @@
+WARNING:EDK:3400 - Use of the repository located at
+   /proj/sw/Xilinx/11.1/edk_user_repository/ 
+   (equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+   It is recommended that you use Global SearchPath preference to specify search
+   paths that apply to all the projects.
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:plb_v46_0 -
+/proj/users/hmnguyen/EDKproject/qmfir_2new/system.mhs line 136 - 1 master(s) :
+10 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:HostMiimRdy CONNECTOR:host_mii_rdy -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 264 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:HostRdData CONNECTOR:host_rd_data -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 265 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2099 - PORT:HostMiimSel CONNECTOR:host_mii_sel -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 266 - floating connection!
+WARNING:EDK:2099 - PORT:HostReq CONNECTOR:host_req -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 267 - floating connection!
+WARNING:EDK:2099 - PORT:HostAddr CONNECTOR:host_addr -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 268 - floating connection!
+WARNING:EDK:2099 - PORT:HostEmac1Sel CONNECTOR:host_emac1_sel -
+   /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/
+   data/xps_ll_temac_v2_1_0.mpd line 269 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+WARNING:  xps_sysmon_adc_0 (xps_sysmon_adc) - Interrupt control logic is
+included, but IP2INTC_Irpt port not connected.
+
+Did not find device sumary in qmfir_0's synthesis log file

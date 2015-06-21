@@ -1,0 +1,5 @@
+vhdl proc_sys_reset_v2_00_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v2_00_a/hdl/vhdl/upcnt_n.vhd
+vhdl proc_sys_reset_v2_00_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v2_00_a/hdl/vhdl/lpf.vhd
+vhdl proc_sys_reset_v2_00_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v2_00_a/hdl/vhdl/sequence.vhd
+vhdl proc_sys_reset_v2_00_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_sys_reset_v2_00_a/hdl/vhdl/proc_sys_reset.vhd
+vhdl work ../hdl/proc_sys_reset_0_wrapper.vhd

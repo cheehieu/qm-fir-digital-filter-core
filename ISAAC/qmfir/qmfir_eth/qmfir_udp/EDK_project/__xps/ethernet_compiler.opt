@@ -1,0 +1,20 @@
+ppc440_0
+ETHERNET_SOURCES = sw_src/Ethernet/echo.c sw_src/Ethernet/Instrument.c sw_src/Ethernet/main.c sw_src/Ethernet/platform.c sw_src/Ethernet/xlltemac_example_intr_fifo.c sw_src/Ethernet/xlltemac_example_polled.c sw_src/Ethernet/xlltemac_example_util.c sw_src/Ethernet/xsysmon_polled_example.c sw_src/Ethernet/xtmrctr_intr_example.c sw_src/Ethernet/xtmrctr_selftest_example.c 
+ETHERNET_HEADERS = sw_src/Ethernet/tmrctr_intr_header.h sw_src/Ethernet/Instrument.h sw_src/Ethernet/intc_header.h sw_src/Ethernet/lltemac_header.h sw_src/Ethernet/lltemac_intr_header.h sw_src/Ethernet/platform_config.h sw_src/Ethernet/platform.h sw_src/Ethernet/sysmon_header.h sw_src/Ethernet/tmrctr_header.h sw_src/Ethernet/xlltemac_example.h 
+ETHERNET_CC = powerpc-eabi-gcc
+ETHERNET_CC_SIZE = powerpc-eabi-size
+ETHERNET_CC_OPT = -O2
+ETHERNET_CFLAGS = 
+ETHERNET_CC_SEARCH = # -B
+ETHERNET_LIBPATH = -L./ppc440_0/lib/ # -L
+ETHERNET_INCLUDES = -I./ppc440_0/include/  -Isw_src/Ethernet/ # -I
+ETHERNET_LFLAGS =   -llwip4 
+ETHERNET_LINKER_SCRIPT = 
+ETHERNET_CC_DEBUG_FLAG =  -g 
+ETHERNET_CC_PROFILE_FLAG = # -pg
+ETHERNET_CC_GLOBPTR_FLAG= # -msdata=eabi
+ETHERNET_CC_INFERRED_FLAGS= -mcpu=440 
+ETHERNET_CC_START_ADDR_FLAG= -Wl,-defsym -Wl,_START_ADDR=0x00000000
+ETHERNET_CC_STACK_SIZE_FLAG= -Wl,-defsym -Wl,_STACK_SIZE=0x40000
+ETHERNET_CC_HEAP_SIZE_FLAG= -Wl,-defsym -Wl,_HEAP_SIZE=0x40000
+                  $(ETHERNET_CC_INFERRED_FLAGS)  \

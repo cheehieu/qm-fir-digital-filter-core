@@ -1,0 +1,18 @@
+// File: /proj/users/hmnguyen/qmfir_digital_filter_cores/qmfir_eth/qmfir_udp/EDK_project/implementation/system_stub.bmm
+
+ADDRESS_MAP ppc440_0 PPC440 100
+	ADDRESS_SPACE xps_bram_if_cntlr_0_bram_combined COMBINED [0xffff8000:0xffffffff]
+		ADDRESS_RANGE RAMB32
+		BUS_BLOCK
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_0 [63:56] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_1 [55:48] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_2 [47:40] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_3 [39:32] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_4 [31:24] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_5 [23:16] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_6 [15:8] ;
+			system_i/xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_7 [7:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

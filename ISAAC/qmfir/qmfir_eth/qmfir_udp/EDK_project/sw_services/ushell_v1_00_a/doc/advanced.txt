@@ -1,0 +1,101 @@
+**************************************************************************
+* uShell - A minimalist shell for the Xilinx Virtex PPC-class 
+* uProcessors
+*
+* ORIGINAL AUTHOR: Thomas Werne
+* COMPANY: Jet Propulsion Laboratory
+* VERSION: 1.00
+*
+* File: advanced.txt
+* $Author: werne $
+* $Date: 2009-11-23 15:47:56 -0800 (Mon, 23 Nov 2009) $
+* $Rev: 52 $
+*
+* Copyright 2009, 2010, by the California Institute of Technology.  ALL
+* RIGHTS RESERVED.  United States Government Sponsorship acknowledged.
+* Any commercial use must be negotiated with the Office of Technology
+* Transfer at the California Institute of Technology.
+*
+* This software may be subject to U.S. export control laws and
+* regulations.  By accepting this document, the user agrees to comply
+* with all U.S. export laws and regulations.  User has the
+* responsibility to obtain export licenses, or other export authority
+* as may be required before exporting such information to foreign
+* countries or providing access to foreign persons.
+**************************************************************************
+
+- Optional Functions
+------------------------------------
+There are currently four optional functions of uShell that are
+redefinable by the user: void init(), void user_init(), void
+user_help(), void user_halt().  
+
+The two initialization functions are
+called on program start.  For all practical purposes, init() is the
+first human-written code performed by the PPC, so you should use it to
+do all device initialization.  user_init() is called after the uShell
+banner is printed, making it appropriate for displaying
+project-specific information, diagnostics, etc.  
+
+user_help() is called immediately before the conclusion of the "help"
+shell command, which allows the user to write project-specific help
+commands.
+
+user_halt() is called when the "halt" shell command is called,
+permitting the user to properly shut down all hardware devices.
+
+If your project does not need one of these functions, do not define
+it.
+
+- Customizable Features
+------------------------------------
+The uShell prompt may be changed by defining the string PROMPT
+somewhere in your project: 
+    const char PROMPT[] = ...; 
+
+The maximum number of arguments can be changed by defining the
+parameter MAX_ARGS somewhere in your project:
+    const unsigned int MAX_ARGS = ...;
+
+- Advanced I/O
+------------------------------------
+There are numerous ways to access I/O devices in uShell.  The rd/wr
+commands allow you to specify an address (in hex or decimal) and
+read/write a (b)yte, (h)alfword, or (w)ord from/to that address.
+
+The m/rrd allow you to read a word of data from a memory or
+register by name or key number (available by calling "devs" or "mems")
+of a device and specifying an offset.  If the offset is positive, it
+is taken from the base address of the device.  If the offset is
+negative, it is taken from the high address of the device.
+
+The m/rwr allow you to write a word of data from a memory or
+register by name or key number (available by calling "devs" or "mems")
+of a device and specifying an offset.  If the offset is positive, it
+is taken from the base address of the device.  If the offset is
+negative, it is taken from the high address of the device.
+
+- Shell-only ELF
+------------------------------------
+To do an initial HW bringup test, you can build a uShell-only project.
+There is a blank file "empty.c" that is copied into the project
+library directory ($XPS_PROJ/$PROC_NAME/libsrc/ushell_0_95_a/src/)
+that can be used to trick XPS into building an "empty" project.
+Add this a c-file source to a software-project (turn off most of the
+complicated functions and interrupts?), then build and download the
+project.
+
+- Live uShell on Download
+------------------------------------
+For large software projects that use non-BRAM memory for code storage,
+you might consider replacing the standard bootloop with a uShell that
+will be live immediately after a download.  I haven't tried this yet,
+but in principle it should work.  You'll need to generate a linker
+script, then hack it so that all the functions defined and referenced
+by uShell are in a section that lives in BRAM.  It may take some
+poking through the sources to get this to work, but I think it will be
+worthwhile.
+
+
+Thomas Werne
+27 Nov 2009

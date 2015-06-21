@@ -1,0 +1,699 @@
+Release 11.5 - xst L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </proj/sw/Xilinx/11.1/EDK/virtex5/data/virtex5.acd> with local file </proj/sw/Xilinx/11.1/ISE/virtex5/data/virtex5.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "ppc440_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/proj/users/hmnguyen/EDKproject/qmfir_new/pcores/" "/proj/sw/Xilinx/11.1/edk_user_repository/MyProcessorIPLib/pcores/" "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vfx130tff1738-1
+Output File Name                   : "../implementation/ppc440_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : ppc440_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/ppc440_0_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/ppc440_virtex5_v1_01_a/hdl/vhdl/ppc440_virtex5.vhd" in Library ppc440_virtex5_v1_01_a.
+Entity <ppc440_virtex5> compiled.
+Entity <ppc440_virtex5> (Architecture <structure>) compiled.
+Compiling vhdl file "/proj/users/hmnguyen/EDKproject/qmfir_new/hdl/ppc440_0_wrapper.vhd" in Library work.
+Entity <ppc440_0_wrapper> compiled.
+Entity <ppc440_0_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ppc440_0_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <ppc440_virtex5> in library <ppc440_virtex5_v1_01_a> (architecture <structure>) with generics.
+	C_APU_CONTROL = "00010000000000000"
+	C_APU_UDI_0 = "000000000000000000000000"
+	C_APU_UDI_1 = "000000000000000000000000"
+	C_APU_UDI_10 = "000000000000000000000000"
+	C_APU_UDI_11 = "000000000000000000000000"
+	C_APU_UDI_12 = "000000000000000000000000"
+	C_APU_UDI_13 = "000000000000000000000000"
+	C_APU_UDI_14 = "000000000000000000000000"
+	C_APU_UDI_15 = "000000000000000000000000"
+	C_APU_UDI_2 = "000000000000000000000000"
+	C_APU_UDI_3 = "000000000000000000000000"
+	C_APU_UDI_4 = "000000000000000000000000"
+	C_APU_UDI_5 = "000000000000000000000000"
+	C_APU_UDI_6 = "000000000000000000000000"
+	C_APU_UDI_7 = "000000000000000000000000"
+	C_APU_UDI_8 = "000000000000000000000000"
+	C_APU_UDI_9 = "000000000000000000000000"
+	C_DCR_AUTOLOCK_ENABLE = 1
+	C_DCU_RD_LD_CACHE_PLB_PRIO = "00"
+	C_DCU_RD_NONCACHE_PLB_PRIO = "00"
+	C_DCU_RD_TOUCH_PLB_PRIO = "00"
+	C_DCU_RD_URGENT_PLB_PRIO = "00"
+	C_DCU_WR_FLUSH_PLB_PRIO = "00"
+	C_DCU_WR_STORE_PLB_PRIO = "00"
+	C_DCU_WR_URGENT_PLB_PRIO = "00"
+	C_DMA0_CONTROL = "00000000"
+	C_DMA0_PLB_PRIO = "00"
+	C_DMA0_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA0_RXIRQTIMER = "1111111111"
+	C_DMA0_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA0_TXIRQTIMER = "1111111111"
+	C_DMA1_CONTROL = "00000000"
+	C_DMA1_PLB_PRIO = "00"
+	C_DMA1_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA1_RXIRQTIMER = "1111111111"
+	C_DMA1_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA1_TXIRQTIMER = "1111111111"
+	C_DMA2_CONTROL = "00000000"
+	C_DMA2_PLB_PRIO = "00"
+	C_DMA2_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA2_RXIRQTIMER = "1111111111"
+	C_DMA2_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA2_TXIRQTIMER = "1111111111"
+	C_DMA3_CONTROL = "00000000"
+	C_DMA3_PLB_PRIO = "00"
+	C_DMA3_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA3_RXIRQTIMER = "1111111111"
+	C_DMA3_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA3_TXIRQTIMER = "1111111111"
+	C_ENDIAN_RESET = '0'
+	C_ICU_RD_FETCH_PLB_PRIO = "00"
+	C_ICU_RD_SPEC_PLB_PRIO = "00"
+	C_ICU_RD_TOUCH_PLB_PRIO = "00"
+	C_IDCR_BASEADDR = "0000000000"
+	C_IDCR_HIGHADDR = "0011111111"
+	C_INTERCONNECT_IMASK = "11111111111111111111111111111111"
+	C_MPLB_ALLOW_LOCK_XFER = 1
+	C_MPLB_ARB_MODE = 0
+	C_MPLB_AWIDTH = 32
+	C_MPLB_COUNTER = "00000000000000000000010100000000"
+	C_MPLB_DWIDTH = 128
+	C_MPLB_MAX_BURST = 8
+	C_MPLB_NATIVE_DWIDTH = 128
+	C_MPLB_P2P = 0
+	C_MPLB_PRIO_DCUR = 2
+	C_MPLB_PRIO_DCUW = 3
+	C_MPLB_PRIO_ICU = 4
+	C_MPLB_PRIO_SPLB0 = 1
+	C_MPLB_PRIO_SPLB1 = 0
+	C_MPLB_READ_PIPE_ENABLE = 1
+	C_MPLB_SYNC_TATTRIBUTE = 0
+	C_MPLB_WDOG_ENABLE = 1
+	C_MPLB_WRITE_PIPE_ENABLE = 1
+	C_MPLB_WRITE_POST_ENABLE = 1
+	C_NUM_DMA = 0
+	C_PIR = "1111"
+	C_PPC440MC_ADDR_BASE = "11111111111111111111111111111111"
+	C_PPC440MC_ADDR_HIGH = "00000000000000000000000000000000"
+	C_PPC440MC_ARB_MODE = 0
+	C_PPC440MC_BANK_CONFLICT_MASK = "00000000000000000000000000000000"
+	C_PPC440MC_CONTROL = "10000000111100000000000010001111"
+	C_PPC440MC_MAX_BURST = 8
+	C_PPC440MC_PRIO_DCUR = 2
+	C_PPC440MC_PRIO_DCUW = 3
+	C_PPC440MC_PRIO_ICU = 4
+	C_PPC440MC_PRIO_SPLB0 = 1
+	C_PPC440MC_PRIO_SPLB1 = 0
+	C_PPC440MC_ROW_CONFLICT_MASK = "00000000000000000000000000000000"
+	C_PPCDM_ASYNCMODE = 0
+	C_PPCDS_ASYNCMODE = 0
+	C_SPLB0_ALLOW_LOCK_XFER = 1
+	C_SPLB0_AWIDTH = 32
+	C_SPLB0_DWIDTH = 128
+	C_SPLB0_MID_WIDTH = 1
+	C_SPLB0_NATIVE_DWIDTH = 128
+	C_SPLB0_NUM_MASTERS = 1
+	C_SPLB0_NUM_MPLB_ADDR_RNG = 0
+	C_SPLB0_P2P = -1
+	C_SPLB0_PROPAGATE_MIRQ = 0
+	C_SPLB0_READ_PIPE_ENABLE = 1
+	C_SPLB0_RNG0_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG0_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG1_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG1_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG2_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG2_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG3_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG3_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG_MC_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG_MC_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_SUPPORT_BURSTS = 1
+	C_SPLB0_USE_MPLB_ADDR = 0
+	C_SPLB1_ALLOW_LOCK_XFER = 1
+	C_SPLB1_AWIDTH = 32
+	C_SPLB1_DWIDTH = 128
+	C_SPLB1_MID_WIDTH = 1
+	C_SPLB1_NATIVE_DWIDTH = 128
+	C_SPLB1_NUM_MASTERS = 1
+	C_SPLB1_NUM_MPLB_ADDR_RNG = 0
+	C_SPLB1_P2P = -1
+	C_SPLB1_PROPAGATE_MIRQ = 0
+	C_SPLB1_READ_PIPE_ENABLE = 1
+	C_SPLB1_RNG0_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG0_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG1_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG1_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG2_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG2_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG3_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG3_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG_MC_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG_MC_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_SUPPORT_BURSTS = 1
+	C_SPLB1_USE_MPLB_ADDR = 0
+	C_USER_RESET = "0000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ppc440_0_wrapper> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:753 - "/proj/users/hmnguyen/EDKproject/qmfir_new/hdl/ppc440_0_wrapper.vhd" line 782: Unconnected output port 'PPC440MCCLKOUT' of component 'ppc440_virtex5'.
+Entity <ppc440_0_wrapper> analyzed. Unit <ppc440_0_wrapper> generated.
+
+Analyzing generic Entity <ppc440_virtex5> in library <ppc440_virtex5_v1_01_a> (Architecture <structure>).
+	C_APU_CONTROL = "00010000000000000"
+	C_APU_UDI_0 = "000000000000000000000000"
+	C_APU_UDI_1 = "000000000000000000000000"
+	C_APU_UDI_10 = "000000000000000000000000"
+	C_APU_UDI_11 = "000000000000000000000000"
+	C_APU_UDI_12 = "000000000000000000000000"
+	C_APU_UDI_13 = "000000000000000000000000"
+	C_APU_UDI_14 = "000000000000000000000000"
+	C_APU_UDI_15 = "000000000000000000000000"
+	C_APU_UDI_2 = "000000000000000000000000"
+	C_APU_UDI_3 = "000000000000000000000000"
+	C_APU_UDI_4 = "000000000000000000000000"
+	C_APU_UDI_5 = "000000000000000000000000"
+	C_APU_UDI_6 = "000000000000000000000000"
+	C_APU_UDI_7 = "000000000000000000000000"
+	C_APU_UDI_8 = "000000000000000000000000"
+	C_APU_UDI_9 = "000000000000000000000000"
+	C_DCR_AUTOLOCK_ENABLE = 1
+	C_DCU_RD_LD_CACHE_PLB_PRIO = "00"
+	C_DCU_RD_NONCACHE_PLB_PRIO = "00"
+	C_DCU_RD_TOUCH_PLB_PRIO = "00"
+	C_DCU_RD_URGENT_PLB_PRIO = "00"
+	C_DCU_WR_FLUSH_PLB_PRIO = "00"
+	C_DCU_WR_STORE_PLB_PRIO = "00"
+	C_DCU_WR_URGENT_PLB_PRIO = "00"
+	C_DMA0_CONTROL = "00000000"
+	C_DMA0_PLB_PRIO = "00"
+	C_DMA0_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA0_RXIRQTIMER = "1111111111"
+	C_DMA0_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA0_TXIRQTIMER = "1111111111"
+	C_DMA1_CONTROL = "00000000"
+	C_DMA1_PLB_PRIO = "00"
+	C_DMA1_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA1_RXIRQTIMER = "1111111111"
+	C_DMA1_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA1_TXIRQTIMER = "1111111111"
+	C_DMA2_CONTROL = "00000000"
+	C_DMA2_PLB_PRIO = "00"
+	C_DMA2_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA2_RXIRQTIMER = "1111111111"
+	C_DMA2_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA2_TXIRQTIMER = "1111111111"
+	C_DMA3_CONTROL = "00000000"
+	C_DMA3_PLB_PRIO = "00"
+	C_DMA3_RXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA3_RXIRQTIMER = "1111111111"
+	C_DMA3_TXCHANNELCTRL = "00000001000000010000000000000000"
+	C_DMA3_TXIRQTIMER = "1111111111"
+	C_ENDIAN_RESET = '0'
+	C_ICU_RD_FETCH_PLB_PRIO = "00"
+	C_ICU_RD_SPEC_PLB_PRIO = "00"
+	C_ICU_RD_TOUCH_PLB_PRIO = "00"
+	C_IDCR_BASEADDR = "0000000000"
+	C_IDCR_HIGHADDR = "0011111111"
+	C_INTERCONNECT_IMASK = "11111111111111111111111111111111"
+	C_MPLB_ALLOW_LOCK_XFER = 1
+	C_MPLB_ARB_MODE = 0
+	C_MPLB_AWIDTH = 32
+	C_MPLB_COUNTER = "00000000000000000000010100000000"
+	C_MPLB_DWIDTH = 128
+	C_MPLB_MAX_BURST = 8
+	C_MPLB_NATIVE_DWIDTH = 128
+	C_MPLB_P2P = 0
+	C_MPLB_PRIO_DCUR = 2
+	C_MPLB_PRIO_DCUW = 3
+	C_MPLB_PRIO_ICU = 4
+	C_MPLB_PRIO_SPLB0 = 1
+	C_MPLB_PRIO_SPLB1 = 0
+	C_MPLB_READ_PIPE_ENABLE = 1
+	C_MPLB_SYNC_TATTRIBUTE = 0
+	C_MPLB_WDOG_ENABLE = 1
+	C_MPLB_WRITE_PIPE_ENABLE = 1
+	C_MPLB_WRITE_POST_ENABLE = 1
+	C_NUM_DMA = 0
+	C_PIR = "1111"
+	C_PPC440MC_ADDR_BASE = "11111111111111111111111111111111"
+	C_PPC440MC_ADDR_HIGH = "00000000000000000000000000000000"
+	C_PPC440MC_ARB_MODE = 0
+	C_PPC440MC_BANK_CONFLICT_MASK = "00000000000000000000000000000000"
+	C_PPC440MC_CONTROL = "10000000111100000000000010001111"
+	C_PPC440MC_MAX_BURST = 8
+	C_PPC440MC_PRIO_DCUR = 2
+	C_PPC440MC_PRIO_DCUW = 3
+	C_PPC440MC_PRIO_ICU = 4
+	C_PPC440MC_PRIO_SPLB0 = 1
+	C_PPC440MC_PRIO_SPLB1 = 0
+	C_PPC440MC_ROW_CONFLICT_MASK = "00000000000000000000000000000000"
+	C_PPCDM_ASYNCMODE = 0
+	C_PPCDS_ASYNCMODE = 0
+	C_SPLB0_ALLOW_LOCK_XFER = 1
+	C_SPLB0_AWIDTH = 32
+	C_SPLB0_DWIDTH = 128
+	C_SPLB0_MID_WIDTH = 1
+	C_SPLB0_NATIVE_DWIDTH = 128
+	C_SPLB0_NUM_MASTERS = 1
+	C_SPLB0_NUM_MPLB_ADDR_RNG = 0
+	C_SPLB0_P2P = -1
+	C_SPLB0_PROPAGATE_MIRQ = 0
+	C_SPLB0_READ_PIPE_ENABLE = 1
+	C_SPLB0_RNG0_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG0_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG1_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG1_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG2_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG2_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG3_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG3_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_RNG_MC_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB0_RNG_MC_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB0_SUPPORT_BURSTS = 1
+	C_SPLB0_USE_MPLB_ADDR = 0
+	C_SPLB1_ALLOW_LOCK_XFER = 1
+	C_SPLB1_AWIDTH = 32
+	C_SPLB1_DWIDTH = 128
+	C_SPLB1_MID_WIDTH = 1
+	C_SPLB1_NATIVE_DWIDTH = 128
+	C_SPLB1_NUM_MASTERS = 1
+	C_SPLB1_NUM_MPLB_ADDR_RNG = 0
+	C_SPLB1_P2P = -1
+	C_SPLB1_PROPAGATE_MIRQ = 0
+	C_SPLB1_READ_PIPE_ENABLE = 1
+	C_SPLB1_RNG0_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG0_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG1_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG1_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG2_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG2_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG3_MPLB_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG3_MPLB_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_RNG_MC_BASEADDR = "11111111111111111111111111111111"
+	C_SPLB1_RNG_MC_HIGHADDR = "00000000000000000000000000000000"
+	C_SPLB1_SUPPORT_BURSTS = 1
+	C_SPLB1_USE_MPLB_ADDR = 0
+	C_USER_RESET = "0000"
+    Set user-defined property "APU_CONTROL =  02000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI0 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI1 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI10 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI11 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI12 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI13 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI14 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI15 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI2 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI3 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI4 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI5 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI6 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI7 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI8 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "APU_UDI9 =  000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "CLOCK_DELAY =  TRUE" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DCR_AUTOLOCK_ENABLE =  TRUE" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA0_CONTROL =  00" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA0_RXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA0_RXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA0_TXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA0_TXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA1_CONTROL =  00" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA1_RXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA1_RXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA1_TXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA1_TXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA2_CONTROL =  00" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA2_RXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA2_RXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA2_TXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA2_TXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA3_CONTROL =  00" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA3_RXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA3_RXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA3_TXCHANNELCTRL =  01010000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "DMA3_TXIRQTIMER =  3FF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "INTERCONNECT_IMASK =  FFFFFFFF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "INTERCONNECT_TMPL_SEL =  3FFFFFFF" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "MI_ARBCONFIG =  00432010" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "MI_BANKCONFLICT_MASK =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "MI_CONTROL =  80F0008F" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "MI_ROWCONFLICT_MASK =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCDM_ASYNCMODE =  FALSE" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCDS_ASYNCMODE =  FALSE" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCM_ARBCONFIG =  00432010" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCM_CONTROL =  8000009F" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCM_COUNTER =  00000500" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS0_ADDRMAP_TMPL0 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS0_ADDRMAP_TMPL1 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS0_ADDRMAP_TMPL2 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS0_ADDRMAP_TMPL3 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS0_CONTROL =  8033336C" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS0_WIDTH_128N64 =  TRUE" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS1_ADDRMAP_TMPL0 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS1_ADDRMAP_TMPL1 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS1_ADDRMAP_TMPL2 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS1_ADDRMAP_TMPL3 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS1_CONTROL =  8033336C" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "PPCS1_WIDTH_128N64 =  TRUE" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "XBAR_ADDRMAP_TMPL0 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "XBAR_ADDRMAP_TMPL1 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "XBAR_ADDRMAP_TMPL2 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+    Set user-defined property "XBAR_ADDRMAP_TMPL3 =  00000000" for instance <PPC440_i> in unit <ppc440_virtex5>.
+Entity <ppc440_virtex5> analyzed. Unit <ppc440_virtex5> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ppc440_virtex5>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/ppc440_virtex5_v1_01_a/hdl/vhdl/ppc440_virtex5.vhd".
+WARNING:Xst:647 - Input <PLBPPCS0UABUS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLBPPCS1UABUS> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <PPCS1PLBMWRERR_i<1:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PPCS1PLBMRDERR_i<1:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PPCS1PLBMBUSY_i<1:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PPCS0PLBMWRERR_i<1:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PPCS0PLBMRDERR_i<1:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <PPCS0PLBMBUSY_i<1:3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <PPCS0PLBMBUSY_reg<0>>.
+    Found 1-bit register for signal <PPCS1PLBMBUSY_reg<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <ppc440_virtex5> synthesized.
+
+
+Synthesizing Unit <ppc440_0_wrapper>.
+    Related source file is "/proj/users/hmnguyen/EDKproject/qmfir_new/hdl/ppc440_0_wrapper.vhd".
+Unit <ppc440_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ 1-bit register                                        : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ppc440_0_wrapper> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/ppc440_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 2534
+
+Cell Usage :
+# BELS                             : 5
+#      GND                         : 1
+#      LUT2                        : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 2
+#      FD                          : 2
+# Others                           : 1
+#      PPC440                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vfx130tff1738-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               2  out of  81920     0%  
+ Number of Slice LUTs:                    3  out of  81920     0%  
+    Number used as Logic:                 3  out of  81920     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      5
+   Number with an unused Flip Flop:       3  out of      5    60%  
+   Number with an unused LUT:             2  out of      5    40%  
+   Number of fully used LUT-FF pairs:     0  out of      5     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                        2534
+ Number of bonded IOBs:                   0  out of    840     0%  
+
+Specific Feature Utilization:
+ Number of PPC440s:                       1  out of      2    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)             | Load  |
+-----------------------------------+-----------------------------------+-------+
+CPMPPCS0PLBCLK                     | NONE(ppc440_0/PPCS0PLBMBUSY_reg_0)| 1     |
+CPMPPCS1PLBCLK                     | NONE(ppc440_0/PPCS1PLBMBUSY_reg_0)| 1     |
+-----------------------------------+-----------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.341ns
+   Maximum output required time after clock: 1.141ns
+   Maximum combinational path delay: 0.670ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CPMPPCS0PLBCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.341ns (Levels of Logic = 0)
+  Source:            ppc440_0/PPC440_i:PPCS0PLBMBUSY0 (PAD)
+  Destination:       ppc440_0/PPCS0PLBMBUSY_reg_0 (FF)
+  Destination Clock: CPMPPCS0PLBCLK rising
+
+  Data Path: ppc440_0/PPC440_i:PPCS0PLBMBUSY0 to ppc440_0/PPCS0PLBMBUSY_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:PPCS0PLBMBUSY0    2   0.000   0.341  ppc440_0/PPC440_i (ppc440_0/PPCS0PLBMBUSY_i<0>)
+     FD:D                     -0.018          ppc440_0/PPCS0PLBMBUSY_reg_0
+    ----------------------------------------
+    Total                      0.341ns (0.000ns logic, 0.341ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CPMPPCS1PLBCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.341ns (Levels of Logic = 0)
+  Source:            ppc440_0/PPC440_i:PPCS1PLBMBUSY0 (PAD)
+  Destination:       ppc440_0/PPCS1PLBMBUSY_reg_0 (FF)
+  Destination Clock: CPMPPCS1PLBCLK rising
+
+  Data Path: ppc440_0/PPC440_i:PPCS1PLBMBUSY0 to ppc440_0/PPCS1PLBMBUSY_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    PPC440:PPCS1PLBMBUSY0    2   0.000   0.341  ppc440_0/PPC440_i (ppc440_0/PPCS1PLBMBUSY_i<0>)
+     FD:D                     -0.018          ppc440_0/PPCS1PLBMBUSY_reg_0
+    ----------------------------------------
+    Total                      0.341ns (0.000ns logic, 0.341ns route)
+                                       (0.0% logic, 100.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CPMPPCS0PLBCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.141ns (Levels of Logic = 1)
+  Source:            ppc440_0/PPCS0PLBMBUSY_reg_0 (FF)
+  Destination:       PPCS0PLBMBUSY<0> (PAD)
+  Source Clock:      CPMPPCS0PLBCLK rising
+
+  Data Path: ppc440_0/PPCS0PLBMBUSY_reg_0 to PPCS0PLBMBUSY<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.576  ppc440_0/PPCS0PLBMBUSY_reg_0 (ppc440_0/PPCS0PLBMBUSY_reg_0)
+     LUT2:I0->O            0   0.094   0.000  ppc440_0/PPCS0PLBMBUSY_0_or00001 (PPCS0PLBMBUSY<0>)
+    ----------------------------------------
+    Total                      1.141ns (0.565ns logic, 0.576ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CPMPPCS1PLBCLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.141ns (Levels of Logic = 1)
+  Source:            ppc440_0/PPCS1PLBMBUSY_reg_0 (FF)
+  Destination:       PPCS1PLBMBUSY<0> (PAD)
+  Source Clock:      CPMPPCS1PLBCLK rising
+
+  Data Path: ppc440_0/PPCS1PLBMBUSY_reg_0 to PPCS1PLBMBUSY<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.471   0.576  ppc440_0/PPCS1PLBMBUSY_reg_0 (ppc440_0/PPCS1PLBMBUSY_reg_0)
+     LUT2:I0->O            0   0.094   0.000  ppc440_0/PPCS1PLBMBUSY_0_or00001 (PPCS1PLBMBUSY<0>)
+    ----------------------------------------
+    Total                      1.141ns (0.565ns logic, 0.576ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2434 / 2433
+-------------------------------------------------------------------------
+Delay:               0.670ns (Levels of Logic = 1)
+  Source:            DBGC440DEBUGHALTNEG (PAD)
+  Destination:       ppc440_0/PPC440_i:DBGC440DEBUGHALT (PAD)
+
+  Data Path: DBGC440DEBUGHALTNEG to ppc440_0/PPC440_i:DBGC440DEBUGHALT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT2:I0->O            1   0.094   0.336  ppc440_0/DBGC440DEBUGHALT_i1 (ppc440_0/DBGC440DEBUGHALT_i)
+    PPC440:DBGC440DEBUGHALT        0.000          ppc440_0/PPC440_i
+    ----------------------------------------
+    Total                      0.670ns (0.334ns logic, 0.336ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 10.35 secs
+ 
+--> 
+
+
+Total memory usage is 182768 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

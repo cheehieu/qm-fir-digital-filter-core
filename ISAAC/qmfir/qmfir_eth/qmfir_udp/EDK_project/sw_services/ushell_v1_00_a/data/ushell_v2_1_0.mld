@@ -1,0 +1,62 @@
+###############################################################################
+#
+# uShell - A minimalist shell for the Xilinx Virtex PPC-class 
+# uProcessors
+#
+# ORIGINAL AUTHOR: Thomas Werne
+# COMPANY: Jet Propulsion Laboratory
+# VERSION: 1.00
+#
+# File: ushell_v2_1_0.mld
+# $Author: werne $
+# $Date: 2009-11-15 00:46:05 -0800 (Sun, 15 Nov 2009) $
+# $Rev: 44 $
+#
+# Used by Xilinx libgen to build config files for uShell project
+#
+# Copyright 2009, 2010, by the California Institute of Technology.  ALL
+# RIGHTS RESERVED.  United States Government Sponsorship acknowledged.
+# Any commercial use must be negotiated with the Office of Technology
+# Transfer at the California Institute of Technology.
+#
+# This software may be subject to U.S. export control laws and
+# regulations.  by accepting this document, the user agrees to comply
+# with all U.S. export laws and regulations.  User has the
+# responsibility to obtain export licenses, or other export authority
+# as may be required before exporting such information to foreign
+# countries or providing access to foreign persons.
+###############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN LIBRARY uShell
+
+    OPTION DRC = ushell_drc;
+    OPTION COPYFILES = all;
+    OPTION DESC = "uShell:  a minimalist shell";
+
+    PARAM NAME = ls,      DESC = "Enable ls function", type = bool, default = true;
+    PARAM NAME = list,    DESC = "Enable list function", type = bool, default = true;
+    PARAM NAME = devs,    DESC = "Enable devs function", type = bool, default = true;
+    PARAM NAME = mems,    DESC = "Enable mems function", type = bool, default = true;
+    PARAM NAME = rd,      DESC = "Enable rd function", type = bool, default = true;
+    PARAM NAME = wr,      DESC = "Enable wr function", type = bool, default = true;
+    PARAM NAME = mrd,     DESC = "Enable mrd function", type = bool, default = true;
+    PARAM NAME = mwr,     DESC = "Enable mwr function", type = bool, default = true;
+    PARAM NAME = rrd,     DESC = "Enable rrd function", type = bool, default = true;
+    PARAM NAME = rwr,     DESC = "Enable rwr function", type = bool, default = true;
+    PARAM NAME = dump,    DESC = "Enable dump function", type = bool, default = true;
+    PARAM NAME = load,    DESC = "Enable load function", type = bool, default = true;
+    PARAM NAME = copy,    DESC = "Enable copy function", type = bool, default = true;
+    PARAM NAME = reboot,  DESC = "Enable reboot function", type = bool, default = true;
+    PARAM NAME = halt,    DESC = "Enable halt function", type = bool, default = true;
+    PARAM NAME = help,    DESC = "Enable help function", type = bool, default = true;
+    PARAM NAME = history, DESC = "Enable history function", type = bool, default = true;
+    PARAM NAME = exec,    DESC = "Enable exec function", type = bool, default = true;
+    PARAM NAME = usage,   DESC = "Enable usage function", type = bool, default = true;
+    PARAM NAME = cache,   DESC = "Enable cache function", type = bool, default = true;
+    PARAM NAME = jump,    DESC = "Enable jump function", type = bool, default = true;
+    PARAM NAME = interrupts, DESC = "Enable interrupt driven handler", type = bool, default = true;
+    PARAM NAME = INCLUDE_DIRS,    DESC = "Include directories for your project (semicolon-delimited)", type = string;
+
+END LIBRARY

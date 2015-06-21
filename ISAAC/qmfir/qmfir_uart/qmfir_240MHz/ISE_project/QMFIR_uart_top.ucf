@@ -1,0 +1,7 @@
+NET "clk" TNM_NET = clk;
+TIMESPEC TS_clk = PERIOD "clk" 16 ns HIGH 50%;
+
+NET "clk" LOC = "AM16" ;
+NET "arst_n" LOC = "K29" ;
+NET "uart_tx" LOC = "F42" ;
+NET "uart_rx" LOC = "F41" ;

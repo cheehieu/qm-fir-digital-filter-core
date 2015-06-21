@@ -1,0 +1,163 @@
+Release 11.5 par L.70 (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+nexusbus::  Tue Apr 19 10:17:13 2011
+
+par -ise qmfir_uart.ise -w -intstyle ise -ol high -t 1 QMFIR_uart_top_map.ncd
+QMFIR_uart_top.ncd QMFIR_uart_top.pcf 
+
+
+Constraints file: QMFIR_uart_top.pcf.
+   "QMFIR_uart_top" is an NCD, version 3.2, device xc5vfx130t, package ff1738, speed -1
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to '2200@cae-lmgr1,2200@cae-lmgr2,2200@cae-lmgr3'.
+INFO:Security:56 - Part 'xc5vfx130t' is not a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue
+to function, but you no longer qualify for Xilinx software updates or new releases.
+
+----------------------------------------------------------------------
+INFO:Par:465 - The PAR option, "-t" (Starting Placer Cost Table), will be disabled in the next software release when
+   used in combination with MAP -timing(Perform Timing-Driven Packing and Placement) or when run with V5 or newer
+   architectures.  To explore cost tables, please use the MAP option, "-t" (Starting Placer Cost Table), instead.
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+WARNING:Timing:3158 - The DCM, DCM_BASE_inst, has the attribute CLK_FEEDBACK set to NONE.  No phase relationship exists
+   between the input and output clocks of this DCM. Data paths between these clock domains must be constrained using
+   FROM/TO constraints.
+
+Device speed data version:  "PRODUCTION 1.66 2010-02-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           3 out of 32      9%
+   Number of DCM_ADVs                        1 out of 12      8%
+   Number of DSP48Es                        68 out of 320    21%
+   Number of External IOBs                   4 out of 840     1%
+      Number of LOCed IOBs                   4 out of 4     100%
+
+   Number of RAMB18X2SDPs                    2 out of 298     1%
+   Number of RAMB36_EXPs                     4 out of 298     1%
+   Number of Slice Registers              9915 out of 81920  12%
+      Number used as Flip Flops           9890
+      Number used as Latches                24
+      Number used as LatchThrus              1
+
+   Number of Slice LUTS                  11660 out of 81920  14%
+   Number of Slice LUT-Flip Flop pairs   13371 out of 81920  16%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 21 secs 
+Finished initial Timing Analysis.  REAL time: 22 secs 
+
+Starting Router
+
+
+Phase  1  : 72105 unrouted;      REAL time: 25 secs 
+
+Phase  2  : 59903 unrouted;      REAL time: 30 secs 
+
+Phase  3  : 23592 unrouted;      REAL time: 44 secs 
+
+Phase  4  : 23592 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 50 secs 
+
+Updating file: QMFIR_uart_top.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 10 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 10 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 10 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 10 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 10 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 19 secs 
+Total REAL time to Router completion: 1 mins 19 secs 
+Total CPU time to Router completion: 1 mins 19 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|            core_clk | BUFGCTRL_X0Y0| No   | 2903 |  1.028     |  2.587      |
++---------------------+--------------+------+------+------------+-------------+
+|  uart_reg_i_not0001 |BUFGCTRL_X0Y31| No   |   15 |  0.102     |  2.101      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_core_clk1 = PERIOD TIMEGRP "core_clk1" | SETUP       |    12.024ns|    13.576ns|       0|           0
+   25.6 ns HIGH 50%                         | HOLD        |     0.237ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_clk = PERIOD TIMEGRP "clk" 16 ns HIGH  | N/A         |         N/A|         N/A|     N/A|         N/A
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 mins 36 secs 
+Total CPU time to PAR completion: 1 mins 35 secs 
+
+Peak Memory Usage:  1094 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 1
+Number of info messages: 1
+
+Writing design to file QMFIR_uart_top.ncd
+
+
+
+PAR done!

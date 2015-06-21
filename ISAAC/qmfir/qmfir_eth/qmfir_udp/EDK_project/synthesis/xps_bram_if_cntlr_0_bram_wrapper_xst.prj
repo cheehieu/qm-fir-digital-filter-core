@@ -1,0 +1,2 @@
+VHDL xps_bram_if_cntlr_0_bram_elaborate_v1_00_a /proj/users/hmnguyen/qmfir_digital_filter_cores/qmfir_eth/qmfir_udp/EDK_project/hdl/elaborate/xps_bram_if_cntlr_0_bram_elaborate_v1_00_a/hdl/vhdl/xps_bram_if_cntlr_0_bram_elaborate.vhd
+vhdl work ../hdl/xps_bram_if_cntlr_0_bram_wrapper.vhd

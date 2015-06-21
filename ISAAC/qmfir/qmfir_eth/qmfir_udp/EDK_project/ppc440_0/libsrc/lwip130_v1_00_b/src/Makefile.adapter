@@ -1,0 +1,34 @@
+include Makefile.config
+
+PORT = contrib/ports/xilinx
+
+COMMON_SRCS = $(PORT)/sys_arch_raw.c \
+	      $(PORT)/netif/xpqueue.c \
+	      $(PORT)/netif/xadapter.c \
+	      $(PORT)/netif/xtopology_g.c
+
+EMACLITE_SRCS = $(PORT)/netif/xemacliteif.c
+
+TEMAC_SRCS = $(PORT)/netif/xlltemacif_hw.c \
+	     $(PORT)/netif/xlltemacif_physpeed.c \
+	     $(PORT)/netif/xlltemacif_fifo.c \
+	     $(PORT)/netif/xlltemacif_sdma.c \
+	     $(PORT)/netif/xlltemacif.c
+
+SYSARCH_SOCKET_SRCS = $(PORT)/sys_arch.c
+
+ADAPTER_SRCS = $(COMMON_SRCS)
+
+ifeq ($(CONFIG_SOCKETS), y)
+ADAPTER_SRCS += $(SYSARCH_SOCKET_SRCS)
+endif	
+
+ifeq ($(CONFIG_XEMACLITE), y)
+ADAPTER_SRCS += $(EMACLITE_SRCS)
+endif
+
+ifeq ($(CONFIG_XLLTEMAC), y)
+ADAPTER_SRCS += $(TEMAC_SRCS)
+endif
+
+ADAPTER_OBJS = $(ADAPTER_SRCS:%.c=%.o)

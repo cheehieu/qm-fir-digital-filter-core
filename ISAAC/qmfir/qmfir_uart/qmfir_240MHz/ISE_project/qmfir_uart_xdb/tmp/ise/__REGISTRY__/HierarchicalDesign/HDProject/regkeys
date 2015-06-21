@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+/opt/Xilinx/11.1/ISE/bin/lin64/unwrapped/ngdbuild -ise qmfir_uart.ise -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc5vfx130t-ff1738-1 QMFIR_uart_top.ngc QMFIR_uart_top.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

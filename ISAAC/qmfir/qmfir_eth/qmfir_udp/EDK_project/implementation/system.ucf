@@ -1,0 +1,321 @@
+
+# ##############################################################################
+# Name: system.ucf
+# $Rev: 1 $
+# $Author: umsted $
+# $Date: 2010-10-04 07:29:59 -0700 (Mon, 04 Oct 2010) $
+# -
+# Target Board: iBoard
+# Family:       virtex5
+# Device:       XC5VFX130T
+# Package:      FF1738
+# Speed Grade:  -1
+# Processor:    ppc440_0, ppc440_1
+# CPU freq:     250.00 MHz
+# Bus freq:     125.00 MHz
+# -
+# Total Off Chip Memory : 1+ GB MB
+# - DDR_SDRAM_0 = 512 MB
+# - DDR_SDRAM_1 = 512 MB
+# - SRAM
+# - FLASH
+# ##############################################################################
+
+
+###########################
+#### System clock and reset
+###########################
+
+NET fpga_0_sys_clk_pin LOC = AM16 | IOSTANDARD = LVCMOS33;
+NET fpga_0_sys_rst_pin LOC = K29  | IOSTANDARD = LVCMOS25;
+
+NET fpga_0_sys_clk_pin TNM_NET = fpga_0_sys_clk_pin;
+TIMESPEC TS_fpga_0_sys_clk_pin = PERIOD fpga_0_sys_clk_pin 10000 ps;
+Net fpga_0_sys_rst_pin TIG;
+
+
+#############################
+#### Module RS232 constraints
+#############################
+Net fpga_0_RS232_0_RX_pin LOC = F41 | IOSTANDARD=LVCMOS33 | TIG;
+Net fpga_0_RS232_0_TX_pin LOC = F42 | IOSTANDARD=LVCMOS33 | TIG;
+
+#############################
+#### Module Ethernet constraints
+#############################
+Net fpga_0_Hard_Ethernet_MAC_TemacPhy_RST_n_pin LOC = Y8 |  IOSTANDARD = LVCMOS25  |  TIG; # Added via a haywire to MICTOR_CPU_HALT_B
+Net fpga_0_Hard_Ethernet_MAC_MII_TXD_0_pin<3>   LOC = P6  |  IOSTANDARD = LVCMOS25  |  SLEW = FAST  |  DRIVE = 6;
+Net fpga_0_Hard_Ethernet_MAC_MII_TXD_0_pin<2>   LOC = T7  |  IOSTANDARD = LVCMOS25  |  SLEW = FAST  |  DRIVE = 6;
+Net fpga_0_Hard_Ethernet_MAC_MII_TXD_0_pin<1>   LOC = T6  |  IOSTANDARD = LVCMOS25  |  SLEW = FAST  |  DRIVE = 6;
+Net fpga_0_Hard_Ethernet_MAC_MII_TXD_0_pin<0>   LOC = R4  |  IOSTANDARD = LVCMOS25  |  SLEW = FAST  |  DRIVE = 6;
+Net fpga_0_Hard_Ethernet_MAC_MII_TX_EN_0_pin    LOC = P5  |  IOSTANDARD = LVCMOS25  |  SLEW = FAST  |  DRIVE = 6;
+Net fpga_0_Hard_Ethernet_MAC_MII_TX_ER_0_pin    LOC = U6  |  IOSTANDARD = LVCMOS25  |  SLEW = FAST  |  DRIVE = 6;
+Net fpga_0_Hard_Ethernet_MAC_MII_RXD_0_pin<3>   LOC = T4  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_RXD_0_pin<2>   LOC = AA11  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_RXD_0_pin<1>   LOC = AA10  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_RXD_0_pin<0>   LOC = AA9  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_RX_DV_0_pin    LOC = T5  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_RX_ER_0_pin    LOC = R5  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_RX_CLK_0_pin   LOC = M26  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MII_TX_CLK_0_pin   LOC = J16  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MDC_0_pin          LOC = W10  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_MDIO_0_pin         LOC = Y9  |  IOSTANDARD = LVCMOS25;
+Net fpga_0_Hard_Ethernet_MAC_PHY_INTR_pin       LOC = W11  |  IOSTANDARD = LVCMOS25  |  TIG;
+
+###### Hard_Ethernet_MAC
+NET "*Hard_Ethernet_MAC/LlinkTemac0_CLK*"           TNM_NET = "LLCLK0"; #name of signal connected to TEMAC LlinkTemac0_CLK input
+NET "*Hard_Ethernet_MAC/SPLB_Clk*"                  TNM_NET = "PLBCLK"; #name of signal connected to TEMAC SPLB_Clk input
+
+# EMAC0 TX Client Clock
+NET "*Hard_Ethernet_MAC/TxClientClk_0"              TNM_NET = "clk_client_tx0";
+TIMEGRP  "mii_client_clk_tx0"      = "clk_client_tx0";
+TIMESPEC "TS_mii_client_clk_tx0"   = PERIOD "mii_client_clk_tx0" 7500 ps HIGH 50 %;
+
+# EMAC0 RX Client Clock
+NET "*Hard_Ethernet_MAC/RxClientClk_0"              TNM_NET = "clk_client_rx0";
+TIMEGRP  "mii_client_clk_rx0"      = "clk_client_rx0";
+TIMESPEC "TS_gmii_client_clk_rx0"  = PERIOD "gmii_client_clk_rx0" 7500 ps HIGH 50 %;
+
+# EMAC0 RX PHY Clock
+NET "*Hard_Ethernet_MAC/MII_RX_CLK_0*"              TNM_NET = "phy_clk_rx0";
+TIMEGRP  "mii_clk_phy_rx0"         = "phy_clk_rx0";
+TIMESPEC "TS_mii_clk_phy_rx0"      = PERIOD "mii_clk_phy_rx0" 40000 ps HIGH 50 %;
+
+# EMAC0 TX MII 10/100 PHY Clock
+NET "*Hard_Ethernet_MAC/MII_TX_CLK_0*" TNM_NET       = "clk_mii_tx_clk0";
+TIMESPEC "TS_mii_tx_clk0"          = PERIOD "clk_mii_tx_clk0" 40000 ps HIGH 50 %;
+
+# MII Receiver Constraints:  place flip-flops in IOB
+INST "*mii0*RXD_TO_MAC*"    IOB = TRUE;
+INST "*mii0*RX_DV_TO_MAC"   IOB = TRUE;
+INST "*mii0*RX_ER_TO_MAC"   IOB = TRUE;
+
+# PHY spec: 10ns setup time, 10ns hold time                             
+# Assumes equal length board traces
+
+NET "fpga_0_Hard_Ethernet_MAC_MII_RXD_0_pin(?)"  TNM = "mii_rx_0";
+NET "fpga_0_Hard_Ethernet_MAC_MII_RX_DV_0_pin"   TNM = "mii_rx_0";
+NET "fpga_0_Hard_Ethernet_MAC_MII_RX_ER_0_pin"   TNM = "mii_rx_0";
+
+TIMEGRP "mii_rx_0" OFFSET = IN 10 ns VALID 20 ns BEFORE "fpga_0_Hard_Ethernet_MAC_MII_RX_CLK_0_pin";
+
+# MII Transmiter Constraints:  place flip-flops in IOB
+INST "*mii0*MII_TXD_?"      IOB = TRUE;
+INST "*mii0*MII_TX_EN"      IOB = TRUE;
+INST "*mii0*MII_TX_ER"      IOB = TRUE;
+
+TIMESPEC TS_PLB_2_TXPHY0 = FROM PLBCLK      TO clk_phy_tx0 40000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC TS_RXPHY0_2_PLB = FROM phy_clk_rx0 TO PLBCLK      10000 ps DATAPATHONLY; #varies based on period of PLB clock
+
+TIMESPEC "TS_LL_CLK0_2_RX_CLIENT_CLK0"  = FROM LLCLK0 TO clk_client_rx0  8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC "TS_LL_CLK0_2_TX_CLIENT_CLK0"  = FROM LLCLK0 TO clk_client_tx0  8000 ps DATAPATHONLY; #constant value based on Ethernet clock
+TIMESPEC "TS_RX_CLIENT_CLK0_2_LL_CLK0"  = FROM clk_client_rx0 TO LLCLK0 10000 ps DATAPATHONLY; #varies based on period of LocalLink clock
+TIMESPEC "TS_TX_CLIENT_CLK0_2_LL_CLK0"  = FROM clk_client_tx0 TO LLCLK0 10000 ps DATAPATHONLY; #varies based on period of LocalLink clock
+
+
+net "*/hrst*" TIG;
+
+
+###################################
+#### Module DDR_SDRAM_0 constraints
+###################################
+
+# MIG Layout
+
+########################################################################
+# Controller 0
+# Memory Device: DDR_SDRAM->Components->MT46V16M16XX-6T
+# Supported Part Numbers: MT46V16M16P-6T
+#                         MT46V16M16TG-6T
+#
+# Data Width:    32 + ECC
+########################################################################
+
+###############################################################################
+# I/O STANDARDS
+###############################################################################
+
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[*]"         IOSTANDARD = SSTL2_II;
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[*]"       IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_BankAddr_pin[*]"   IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_RAS_n_pin"         IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_CAS_n_pin"         IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_WE_n_pin"          IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_CS_n_pin[*]"       IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_CE_pin"            IOSTANDARD = SSTL2_I;
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQS_pin[*]"        IOSTANDARD = SSTL2_II;
+NET  "fpga_0_DDR_SDRAM_0_DDR_Clk_pin"           IOSTANDARD = DIFF_SSTL2_II;
+NET  "fpga_0_DDR_SDRAM_0_DDR_Clk_n_pin"         IOSTANDARD = DIFF_SSTL2_II;
+
+# This may need to be SSTL2_II
+NET  "fpga_0_DDR_SDRAM_0_DDR_DM_pin[*]"         IOSTANDARD = SSTL2_I;
+
+###############################################################################
+# Limit delays for DQS-gate related timing
+###############################################################################
+
+# Explanation of DQS-gate-related path delays:
+#  1. There is a roughly half cycle path formed by the path (actual
+#     cycle delay is given by tRPST (of memory) + time it takes for
+#     DQS to "glitch" high, then low again to trigger a false falling
+#     edge. This path consists of:
+#       DQS in -> ILOGIC latch -> DQS_COMB -> U_FF_GATE_SYNC ->
+#       GATE_DQS -> ILOGIC latch C input
+#     The two nets in this path must be constrained. The numbers
+#     chosen below will ensure < 2.5ns delay on this half cycle
+#     path. There may be cases (when running at or near 200MHz, and
+#     also dependent on what loading/terminations exist - these
+#     factors can affect the rise-time of the DQS postamble "glitch",
+#     where it is required to bring the total path delay lower).
+#     The default MAXDELAY values chosen based partially on how fast
+#     PAR can route these nets over a variety of devices. For any
+#     particular design, they may be brought down furthur with use of
+#     Directed Routing Constraints. These values can also be relaxed
+#     when running at lower (> 200MHz) clock frequencies.
+#  2. Delay on DQS_COMB should also stay low because it forms the
+#     route for the DQS going to the BUFIO. Faster route = less
+#     IDELAY taps necessary (frequency-dependent) on DQ data lines.
+#  3. Delays on EN_DQS and EN_DQS_SYNC routes are not as critical,
+#     as an IDELAY is used to synchronize EN_DQS to the DQS clock
+#     domain. A MAXDELAY is placed to prevent an unconstrained path,
+#     and the resulting possible "runaway" route - these routes cannot
+#     be arbitrarily long, as post-calibration voltage/temp variations
+#     will be significant for longer routes.
+
+# Route from ILOGIC latch "gate" to IDELAY.
+NET "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs*.gen_phy_dqs_iob_gate.u_iob_dqs/dqs_comb"   MAXDELAY = 590 ps;
+NET "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs*.gen_phy_dqs_iob_gate.u_iob_dqs/gate_dqs"   MAXDELAY = 1060 ps;
+
+# Control for DQS gate - from fabric flop. Prevent "runaway" delay
+NET "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_phy_calib_gate.u_phy_calib/en_dqs*"   MAXDELAY = 1.0 ns;
+
+# Output of synchronizing IDELAY for gate sync. Prevent "runaway" delay
+NET "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs*.gen_phy_dqs_iob_gate.u_iob_dqs/en_dqs_sync"   MAXDELAY = 1.2 ns;
+
+###############################################################################
+# Force direct route from PAD to "D" input of ILOGIC for DQS
+# Don't want tools to insert extra IDELAY into this path (IDELAY will
+# be inserted after the DQS gate)
+###############################################################################
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs*.gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_iob_ddr1.u_iobuf_dqs"   IOBDELAY = NONE;
+
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[0]"         LOC = "R34" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[1]"         LOC = "P35" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[2]"         LOC = "N35" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[3]"         LOC = "M36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[4]"         LOC = "L37" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[5]"         LOC = "M37" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[6]"         LOC = "N36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[7]"         LOC = "P36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[8]"         LOC = "H34" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[9]"         LOC = "G33" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[10]"        LOC = "H33" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[11]"        LOC = "G32" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[12]"        LOC = "G31" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[13]"        LOC = "H31" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[14]"        LOC = "J31" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[15]"        LOC = "K33" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[16]"        LOC = "J33" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[17]"        LOC = "K32" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[18]"        LOC = "L32" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[19]"        LOC = "L31" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[20]"        LOC = "P33" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[21]"        LOC = "P32" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[22]"        LOC = "R33" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[23]"        LOC = "R32" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[24]"        LOC = "L24" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[25]"        LOC = "M24" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[26]"        LOC = "E18" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[27]"        LOC = "E17" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[28]"        LOC = "K24" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[29]"        LOC = "L25" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[30]"        LOC = "F16" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[31]"        LOC = "F17" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[32]"        LOC = "K25" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[33]"        LOC = "G16" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[34]"        LOC = "H16" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[35]"        LOC = "H26" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[36]"        LOC = "J26" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[37]"        LOC = "G18" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[38]"        LOC = "G17" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQ_pin[39]"        LOC = "G27" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[0]"      LOC = "W33" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[1]"      LOC = "R35" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[2]"      LOC = "U36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[3]"      LOC = "T35" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[4]"       LOC = "V33" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[5]"       LOC = "V34" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[6]"       LOC = "V35" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[7]"       LOC = "D37" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[8]"       LOC = "E38" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[9]"       LOC = "F37" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[10]"       LOC = "G36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[11]"       LOC = "F36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[12]"       LOC = "F34" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Addr_pin[13]"       LOC = "E35" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_BankAddr_pin[0]"   LOC = "F27" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_BankAddr_pin[1]"   LOC = "M19" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_RAS_n_pin"         LOC = "W32" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_CAS_n_pin"         LOC = "Y33" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_WE_n_pin"          LOC = "Y32" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_CS_n_pin[0]"       LOC = "N18" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_CS_n_pin[1]"       LOC = "G29" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_CE_pin"            LOC = "K35" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQS_pin[0]"        LOC = "U34" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQS_pin[1]"        LOC = "E34" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQS_pin[2]"        LOC = "F31" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQS_pin[3]"        LOC = "J28" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DQS_pin[4]"        LOC = "J18" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Clk_pin"           LOC = "T34" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_Clk_n_pin"         LOC = "U33" ;	      #Bank 19 ###
+
+# These are optional in ECC mode, required in non-ECC mode
+NET  "fpga_0_DDR_SDRAM_0_DDR_DM_pin[0]"         LOC = "T36" ;	      #Bank 19 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DM_pin[1]"         LOC = "L34" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DM_pin[2]"         LOC = "K34" ;	      #Bank 23 ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DM_pin[3]"         LOC = "N20" ;	      #Bank 5  ###
+NET  "fpga_0_DDR_SDRAM_0_DDR_DM_pin[4]"         LOC = "P20" ;	      #Bank 5  ###
+
+# Reserved for future CS lines (missing from iBoard?)
+#NET  "CS_B0_0"                                 LOC = "U31" ;	      #Bank 23 ###
+#NET  "CS_B0_1"                                 LOC = "T31" ;        #Bank 23 ###
+
+# Clock reset
+Net fpga_0_DDR_SDRAM_0_CLK_RESET_n_pin LOC = M6 | IOSTANDARD=LVCMOS25 | TIG;
+
+############################################################################### 
+#The following constraint is added to prevent (false) hold time violations on
+#the data path from stage1 to stage2 capture flops.  Stage1 flops are clocked by 
+#the delayed DQS and stage2 flops are clocked by the clk0 clock. Placing a TIG 
+#on the DQ IDDR capture flop instance to achieve this is acceptable because timing
+#is guaranteed through the use of separate Predictable IP constraints. These
+#violations are reported when anunconstrained path report is run.	  
+############################################################################### 
+INST "*/gen_dq[*].u_iob_dq/u_iserdes_dq" TIG;
+
+###############################################################################
+#Locate DQS gate sync flop in LUT near corresponding DQS input:
+###############################################################################
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[0].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_ff_gate_sync"  LOC = "SLICE_X0Y151";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[1].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_ff_gate_sync"  LOC = "SLICE_X0Y170";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[2].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_ff_gate_sync"  LOC = "SLICE_X0Y169";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[3].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_ff_gate_sync"  LOC = "SLICE_X62Y171";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[4].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_ff_gate_sync"  LOC = "SLICE_X62Y170";
+
+###############################################################################
+#Locate IDELAY for gated DQS at C/C P-side ILOGIC:
+###############################################################################
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[0].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_dqs"  LOC = "IODELAY_X0Y303";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[1].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_dqs"  LOC = "IODELAY_X0Y341";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[2].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_dqs"  LOC = "IODELAY_X0Y339";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[3].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_dqs"  LOC = "IODELAY_X1Y343";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[4].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_dqs"  LOC = "IODELAY_X1Y341";
+
+###############################################################################
+#Locate IDELAY for DQS gate synchronization at C/C N-side ILOGIC near corresponding DQS input:
+###############################################################################
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[0].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_gate"  LOC = "IODELAY_X0Y302";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[1].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_gate"  LOC = "IODELAY_X0Y340";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[2].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_gate"  LOC = "IODELAY_X0Y338";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[3].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_gate"  LOC = "IODELAY_X1Y342";
+INST "*/DDR_SDRAM_0/mpmc_core_0/gen_??_ddr_phy.mpmc_phy_if_0/u_phy_io/gen_dqs[4].gen_phy_dqs_iob_gate.u_iob_dqs/gen_dqs_gate.u_idelay_gate"  LOC = "IODELAY_X1Y340";

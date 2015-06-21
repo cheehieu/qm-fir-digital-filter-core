@@ -1,0 +1,10 @@
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/dcm_module.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/dcm_module_wrapper.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/pll_module.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/pll_module_wrapper.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/mmcm_module.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/mmcm_module_wrapper.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/clock_selection.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/reset_selection.vhd
+vhdl clock_generator_v3_02_a /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v3_02_a/hdl/vhdl/clock_generator.vhd
+vhdl work ../hdl/clock_generator_0_wrapper.vhd

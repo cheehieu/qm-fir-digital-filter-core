@@ -1,0 +1,5 @@
+INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM_ADV comp DCM_BASE_inst,
+   consult the device Data Sheet.
+DRC detected 0 errors and 0 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

@@ -1,0 +1,51 @@
+**************************************************************************
+* uShell - A minimalist shell for the Xilinx Virtex PPC-class 
+* uProcessors
+*
+* ORIGINAL AUTHOR: Thomas Werne
+* COMPANY: Jet Propulsion Laboratory
+* VERSION: 1.00
+*
+* File: todo.txt
+* $Author: werne $
+* $Date: 2010-02-08 12:07:53 -0800 (Mon, 08 Feb 2010) $
+* $Rev: 58 $
+*
+* Copyright 2009, 2010, by the California Institute of Technology.  ALL
+* RIGHTS RESERVED.  United States Government Sponsorship acknowledged.
+* Any commercial use must be negotiated with the Office of Technology
+* Transfer at the California Institute of Technology.
+*
+* This software may be subject to U.S. export control laws and
+* regulations.  By accepting this document, the user agrees to comply
+* with all U.S. export laws and regulations.  User has the
+* responsibility to obtain export licenses, or other export authority
+* as may be required before exporting such information to foreign
+* countries or providing access to foreign persons.
+**************************************************************************
+
+1) Cleanup automatic interrupt registration of UART, etc.
+2) Rewrite xil_printf?
+3) Shrink code size.
+4) Add SPI/EEPROM code to enable use as a bootloader
+5) Finish writing/testing Microblaze code.
+6) Add support for ARM M-1 (partly working code will be rolled-in
+   soon)
+
+
+Done/Comments
+--------------
+X) Autodetect changes in user .h files and rebuild library?
+C) Not going to do this.  It may be impossible...  Looking at how
+Xilinx does `make libs`, I don't see a way to rebuild the libraries
+automatically on a change in a .h file.  I seriously doubt this will
+ever become a real hindrance.
+
+X) Place uShell text and data in its own section --- allows a
+   rudimentary ushell to be placed in BRAM and run on init
+C) Not going to do this.  To make it work, we'd have to move ALL I/O
+functions into this special section... which means we need xil_printf,
+XIo_Out, etc. in there too.  I don't think there's an easy way to do
+this without actually a linker script.  If you have to hack the script
+to get xil_printf etc. into a special section, you can just as easily
+retarget ALL uShell relevant code and data into that section.

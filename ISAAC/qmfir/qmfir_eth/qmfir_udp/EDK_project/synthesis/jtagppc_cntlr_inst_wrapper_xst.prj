@@ -1,0 +1,2 @@
+VHDL jtagppc_cntlr_v2_01_c /proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/jtagppc_cntlr_v2_01_c/synhdl/vhdl/jtagppc_cntlr.vhd
+vhdl work ../hdl/jtagppc_cntlr_inst_wrapper.vhd

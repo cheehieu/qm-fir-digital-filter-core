@@ -1,0 +1,249 @@
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore qmfir ...
+
+INFO:EDK:3195 - leave in port Bus_Burst from component wrpfifo_top grounded as
+   corresponding feature UseSlaveBurst not enabled...
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+Creating HDL source directory ...
+Generating top peripheral VHDL template ...
+Generating stub user logic Verilog template ...
+HDL templates successfully generated ...
+Creating data directory ...
+Generating XPS inteface files ...
+WARNING:HDLParsers:3497 - Ignoring Verilog File
+   "/proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a/data/../hdl/
+   verilog/user_logic.v"
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl
+/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_
+01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plb_address_decoder> compiled.
+Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_00_a/hdl/vhd
+l/pf_dly1_mux.vhd" in Library wrpfifo_v5_00_a.
+Entity <pf_dly1_mux> compiled.
+Entity <pf_dly1_mux> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_
+01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plb_slave_attachment> compiled.
+Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_00_a/hdl/vhd
+l/ipif_control_wr_dre.vhd" in Library wrpfifo_v5_00_a.
+Entity <ipif_control_wr_dre> compiled.
+Entity <ipif_control_wr_dre> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_00_a/hdl/vhd
+l/wrpfifo_dp_cntl.vhd" in Library wrpfifo_v5_00_a.
+Entity <wrpfifo_dp_cntl> compiled.
+Entity <wrpfifo_dp_cntl> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/interrupt_control_v2_01
+_a/hdl/vhdl/interrupt_control.vhd" in Library interrupt_control_v2_01_a.
+Entity <interrupt_control> compiled.
+Entity <interrupt_control> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_00_a/hdl/vhd
+l/wrpfifo_top.vhd" in Library wrpfifo_v5_00_a.
+Entity <wrpfifo_top> compiled.
+Entity <wrpfifo_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_
+01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plbv46_slave_single> compiled.
+Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"/proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a/data/../hdl/vhd
+l/qmfir.vhd" in Library qmfir_v1_00_a.
+Entity <qmfir> compiled.
+Entity <qmfir> (Architecture <IMP>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = qmfir
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+XPS interface files successfully generated ...
+Creating development directory ...
+Generating command option file ...
+Generating readme file ...
+Development misc files successfully generated ...
+No ProjNavigator support files will be generated at this time ...
+No XST synthesis support files will be generated at this time ...
+No BFM simulation files will be generated at this time ...
+Creating software driver data directory ...
+Generating software driver XPS interface (mdd/tcl) files ...
+Software driver data definition file (.mdd) successfully generated ...
+Software driver data generation file (.tcl) successfully generated ...
+Creating software driver src directory ...
+Generating software driver template files ...
+Software driver compile file (Makefile) successfully generated ...
+output user slave register(s) offset to software driver header ...
+output interrupt control register(s) offset to software driver header ...
+output write packet FIFO register(s) offset to software driver header ...
+Software driver header file (.h) successfully generated ...
+Software driver source file (.c) successfully generated ...
+Software driver SelfTest file (.c) successfully generated ...
+Software driver template files successfully generated ...
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard! Please find your
+peripheral hardware templates under
+/proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a and peripheral
+software templates under
+/proj/users/hmnguyen/EDKproject/qmfir_2new/drivers/qmfir_v1_00_a respectively.
+
+Peripheral Summary:
+
+  top name       : qmfir
+  version        : 1.00.a
+  type           : PLB (v4.6) slave
+  features       : slave attachment
+                   interrupt control
+                   write fifo
+                   user s/w registers
+                   user memory spaces
+
+Address Block Summary:
+
+  user logic slv : C_BASEADDR + 0x00000000
+                 : C_BASEADDR + 0x000000FF
+  interrupt      : C_BASEADDR + 0x00000100
+                 : C_BASEADDR + 0x000001FF
+  wrfifo reg     : C_BASEADDR + 0x00000200
+                 : C_BASEADDR + 0x000002FF
+  wrfifo data    : C_BASEADDR + 0x00000300
+                 : C_BASEADDR + 0x000003FF
+  user memory 0  : C_MEM0_BASEADDR
+                 : C_MEM0_HIGHADDR
+  user memory 1  : C_MEM1_BASEADDR
+                 : C_MEM1_HIGHADDR
+  user memory 2  : C_MEM2_BASEADDR
+                 : C_MEM2_HIGHADDR
+
+File Summary
+
+  - HDL source -
+  /proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a/hdl
+  top entity     : vhdl/qmfir.vhd
+  user logic     : verilog/user_logic.v
+
+  - XPS interface -
+  /proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a/data
+  mpd            : qmfir_v2_1_0.mpd
+  pao            : qmfir_v2_1_0.pao
+
+  - Misc file -
+  /proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a/devl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+  - Driver source -
+  /proj/users/hmnguyen/EDKproject/qmfir_2new/drivers/qmfir_v1_00_a/src
+  makefile       : Makefile
+  header         : qmfir.h
+  source         : qmfir.c
+  selftest       : qmfir_selftest.c
+
+  - Driver interface -
+  /proj/users/hmnguyen/EDKproject/qmfir_2new/drivers/qmfir_v1_00_a/data
+  mdd            : qmfir_v2_1_0.mdd
+  tcl            : qmfir_v2_1_0.tcl
+
+

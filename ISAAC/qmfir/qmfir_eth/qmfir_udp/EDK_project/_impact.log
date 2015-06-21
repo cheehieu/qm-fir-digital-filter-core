@@ -1,0 +1,59 @@
+iMPACT Version: 11.5
+
+iMPACT log file Started on Mon Mar  7 16:04:46 2011
+
+Welcome to iMPACT
+iMPACT Version: 11.5
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Reusing A0112001 key.
+Reusing 24112001 key.
+ Cable is LOCKED. Retrying...
+ The cable is being used by another application.
+ Please try opening the cable connection at a later time.
+Reusing 78112001 key.
+Reusing FC112001 key.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport0).
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module parport_pc is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+Cable connection failed.
+Reusing 79112001 key.
+Reusing FD112001 key.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport1).
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module parport_pc is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+Cable connection failed.
+Reusing 7A112001 key.
+Reusing FE112001 key.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport2).
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module parport_pc is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+Cable connection failed.
+Reusing 7B112001 key.
+Reusing FF112001 key.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport3).
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+ Linux release = 2.6.32-27-generic.
+WARNING:iMPACT -  Module parport_pc is not loaded. Please reinstall the cable   drivers. See Answer Record 22648.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =     22 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !

@@ -1,0 +1,20 @@
+ppc440_0
+UDP_DEMO_SOURCES = sw_src/udp_demo/demo.c sw_src/udp_demo/int_setup.c sw_src/udp_demo/main.c 
+UDP_DEMO_HEADERS = sw_src/udp_demo/demo.h sw_src/udp_demo/int_setup.h 
+UDP_DEMO_CC = powerpc-eabi-gcc
+UDP_DEMO_CC_SIZE = powerpc-eabi-size
+UDP_DEMO_CC_OPT = -O2
+UDP_DEMO_CFLAGS = 
+UDP_DEMO_CC_SEARCH = # -B
+UDP_DEMO_LIBPATH = -L./ppc440_0/lib/ # -L
+UDP_DEMO_INCLUDES = -I./ppc440_0/include/  -Isw_src/udp_demo/ # -I
+UDP_DEMO_LFLAGS =   -llwip4 
+UDP_DEMO_LINKER_SCRIPT = 
+UDP_DEMO_CC_DEBUG_FLAG =  -g 
+UDP_DEMO_CC_PROFILE_FLAG = # -pg
+UDP_DEMO_CC_GLOBPTR_FLAG= # -msdata=eabi
+UDP_DEMO_CC_INFERRED_FLAGS= -mcpu=440 
+UDP_DEMO_CC_START_ADDR_FLAG= -Wl,-defsym -Wl,_START_ADDR=0x00000000
+UDP_DEMO_CC_STACK_SIZE_FLAG= -Wl,-defsym -Wl,_STACK_SIZE=0x40000
+UDP_DEMO_CC_HEAP_SIZE_FLAG= -Wl,-defsym -Wl,_HEAP_SIZE=0x40000
+                  $(UDP_DEMO_CC_INFERRED_FLAGS)  \

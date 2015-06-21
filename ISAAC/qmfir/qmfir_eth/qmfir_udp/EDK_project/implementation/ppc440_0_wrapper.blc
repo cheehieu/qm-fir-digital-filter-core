@@ -1,0 +1,32 @@
+Release 11.5 ngcbuild L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+Command Line: /proj/sw/Xilinx/11.1/ISE/bin/lin/unwrapped/ngcbuild -p
+xc5vfx130tff1738-1 -intstyle silent -uc ppc440_0_wrapper.ucf -sd ..
+ppc440_0_wrapper.ngc ../ppc440_0_wrapper.ngc
+
+Reading NGO file
+"/proj/users/hmnguyen/EDKproject/qmfir_new/implementation/ppc440_0_wrapper/ppc44
+0_0_wrapper.ngc" ...
+
+Applying constraints in "ppc440_0_wrapper.ucf" to the design...
+Checking Constraint Associations...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGCBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 79424 kilobytes
+
+Writing NGC file "../ppc440_0_wrapper.ngc" ...
+Total REAL time to NGCBUILD completion:  4 sec
+Total CPU time to NGCBUILD completion:   2 sec
+
+Writing NGCBUILD log file "../ppc440_0_wrapper.blc"...

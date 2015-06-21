@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Par" num="465" delta="unknown" >The PAR option, &quot;-t&quot; (Starting Placer Cost Table), will be disabled in the next software release when used in combination with MAP -timing(Perform Timing-Driven Packing and Placement) or when run with V5 or newer architectures.  To explore cost tables, please use the MAP option, &quot;-t&quot; (Starting Placer Cost Table), instead.
+</msg>
+
+<msg type="warning" file="Timing" num="3158" delta="unknown" >The DCM, <arg fmt="%s" index="1">DCM_BASE_inst</arg>, has the attribute CLK_FEEDBACK set to NONE.  No phase relationship exists between the input and output clocks of this DCM. Data paths between these clock domains must be constrained using FROM/TO constraints.
+</msg>
+
+<msg type="info" file="Timing" num="2761" delta="unknown" >N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no requested value.</msg>
+
+<msg type="info" file="Timing" num="2761" delta="unknown" >N/A entries in the Constraints list may indicate that the constraint does not cover any paths or that it has no requested value.</msg>
+
+</messages>
+

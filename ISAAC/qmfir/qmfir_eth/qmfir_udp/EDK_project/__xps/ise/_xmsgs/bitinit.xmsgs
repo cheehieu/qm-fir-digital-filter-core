@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="EDK" num="3400" delta="old" >Use of the repository located at <arg fmt="%s" index="1">/proj/sw/Xilinx/11.1/edk_user_repository/</arg> 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 171</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_IODELAY_GRP</arg> value to <arg fmt="%s" index="7">DDR_SDRAM_0</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 247</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_DATA_DEPTH</arg> value to <arg fmt="%s" index="7">64</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 248</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_DATA_WIDTH</arg> value to <arg fmt="%s" index="7">16</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 250</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_NUM_ROW_BITS</arg> value to <arg fmt="%s" index="7">14</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 251</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_NUM_COL_BITS</arg> value to <arg fmt="%s" index="7">10</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 252</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRAS</arg> value to <arg fmt="%s" index="7">42000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 253</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRASMAX</arg> value to <arg fmt="%s" index="7">70000000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 254</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRC</arg> value to <arg fmt="%s" index="7">60000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 255</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRCD</arg> value to <arg fmt="%s" index="7">15000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 257</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TWR</arg> value to <arg fmt="%s" index="7">15000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 258</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRP</arg> value to <arg fmt="%s" index="7">15000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 259</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TMRD</arg> value to <arg fmt="%s" index="7">2</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 260</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRRD</arg> value to <arg fmt="%s" index="7">12000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 261</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TRFC</arg> value to <arg fmt="%s" index="7">120000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 262</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_TREFI</arg> value to <arg fmt="%s" index="7">7800000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 269</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_CAS_A_FMAX</arg> value to <arg fmt="%s" index="7">133</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 270</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_CAS_A</arg> value to <arg fmt="%s" index="7">2</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 271</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_CAS_B_FMAX</arg> value to <arg fmt="%s" index="7">166</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 272</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_PART_CAS_B</arg> value to <arg fmt="%s" index="7">2.5</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 291</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_ADDR_WIDTH</arg> value to <arg fmt="%s" index="7">14</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 295</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_DM_WIDTH</arg> value to <arg fmt="%s" index="7">4</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 296</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEM_DQS_WIDTH</arg> value to <arg fmt="%s" index="7">4</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 308</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_ECC_DATA_WIDTH</arg> value to <arg fmt="%s" index="7">8</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 309</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_ECC_DM_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 310</arg> - <arg fmt="%s" index="4">tcl</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_ECC_DQS_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 352</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB0_P2P</arg> value to <arg fmt="%s" index="7">0</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 166</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MPMC_CTRL_P2P</arg> value to <arg fmt="%s" index="7">0</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1039" delta="old" >Did not update the value for parameter: <arg fmt="%s" index="1">DDR_SDRAM_0</arg>:<arg fmt="%s" index="2">C_MPMC_CLK_MEM_PERIOD_PS</arg>. Top-level frequency could not be propagated to this IP. Please make sure that you have specified the frequency of the top-level clock port, and that the clocks are properly connected.
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_timer</arg> INSTANCE:<arg fmt="%s" index="2">xps_timer_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_01_b/data/xps_timer_v2_1_0.mpd line 78</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_timer</arg> INSTANCE:<arg fmt="%s" index="2">xps_timer_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_01_b/data/xps_timer_v2_1_0.mpd line 80</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_timer</arg> INSTANCE:<arg fmt="%s" index="2">xps_timer_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_01_b/data/xps_timer_v2_1_0.mpd line 81</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_sysmon_adc</arg> INSTANCE:<arg fmt="%s" index="2">xps_sysmon_adc_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_sysmon_adc_v2_00_a/data/xps_sysmon_adc_v2_1_0.mpd line 72</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_intc</arg> INSTANCE:<arg fmt="%s" index="2">xps_intc_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_intc_v2_00_a/data/xps_intc_v2_1_0.mpd line 73</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">xps_bram_if_cntlr_0_bram</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 69</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MEMSIZE</arg> value to <arg fmt="%s" index="7">0x8000</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">xps_bram_if_cntlr_0_bram</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 70</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_PORT_DWIDTH</arg> value to <arg fmt="%s" index="7">64</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">bram_block</arg> INSTANCE:<arg fmt="%s" index="2">xps_bram_if_cntlr_0_bram</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/data/bram_block_v2_1_0.mpd line 72</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_NUM_WE</arg> value to <arg fmt="%s" index="7">8</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">xps_bram_if_cntlr_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 75</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">xps_bram_if_cntlr_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 76</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_bram_if_cntlr</arg> INSTANCE:<arg fmt="%s" index="2">xps_bram_if_cntlr_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 80</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_SMALLEST_MASTER</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">plb_v46</arg> INSTANCE:<arg fmt="%s" index="2">plb_v46_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/data/plb_v46_v2_1_0.mpd line 70</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_PLBV46_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">plb_v46</arg> INSTANCE:<arg fmt="%s" index="2">plb_v46_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/data/plb_v46_v2_1_0.mpd line 71</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_PLBV46_NUM_SLAVES</arg> value to <arg fmt="%s" index="7">10</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">plb_v46</arg> INSTANCE:<arg fmt="%s" index="2">plb_v46_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/data/plb_v46_v2_1_0.mpd line 72</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_PLBV46_MID_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">plb_v46</arg> INSTANCE:<arg fmt="%s" index="2">plb_v46_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_04_a/data/plb_v46_v2_1_0.mpd line 74</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_PLBV46_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_uartlite</arg> INSTANCE:<arg fmt="%s" index="2">RS232_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01_a/data/xps_uartlite_v2_1_0.mpd line 73</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_ll_fifo</arg> INSTANCE:<arg fmt="%s" index="2">Hard_Ethernet_MAC_fifo</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_fifo_v1_02_a/data/xps_ll_fifo_v2_1_0.mpd line 66</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_ll_fifo</arg> INSTANCE:<arg fmt="%s" index="2">Hard_Ethernet_MAC_fifo</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_fifo_v1_02_a/data/xps_ll_fifo_v2_1_0.mpd line 67</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_ll_fifo</arg> INSTANCE:<arg fmt="%s" index="2">Hard_Ethernet_MAC_fifo</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_fifo_v1_02_a/data/xps_ll_fifo_v2_1_0.mpd line 73</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_ll_temac</arg> INSTANCE:<arg fmt="%s" index="2">Hard_Ethernet_MAC</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/data/xps_ll_temac_v2_1_0.mpd line 82</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_ll_temac</arg> INSTANCE:<arg fmt="%s" index="2">Hard_Ethernet_MAC</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/data/xps_ll_temac_v2_1_0.mpd line 84</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">xps_ll_temac</arg> INSTANCE:<arg fmt="%s" index="2">Hard_Ethernet_MAC</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_ll_temac_v2_03_a/data/xps_ll_temac_v2_1_0.mpd line 85</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 162</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MPMC_CTRL_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 168</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_MPMC_CTRL_SMALLEST_MASTER</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 348</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB0_DWIDTH</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="old" >IPNAME:<arg fmt="%s" index="1">mpmc</arg> INSTANCE:<arg fmt="%s" index="2">DDR_SDRAM_0</arg> - <arg fmt="%s" index="3">/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v5_04_a/data/mpmc_v2_1_0.mpd line 354</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB0_SMALLEST_MASTER</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">qmfir</arg> INSTANCE:<arg fmt="%s" index="2">qmfir_0</arg> - <arg fmt="%s" index="3">/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/pcores/qmfir_v1_00_a/data/qmfir_v2_1_0.mpd line 29</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_NUM_MASTERS</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">qmfir</arg> INSTANCE:<arg fmt="%s" index="2">qmfir_0</arg> - <arg fmt="%s" index="3">/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/pcores/qmfir_v1_00_a/data/qmfir_v2_1_0.mpd line 30</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_MID_WIDTH</arg> value to <arg fmt="%s" index="7">1</arg>
+</msg>
+
+<msg type="info" file="EDK" num="1560" delta="new" >IPNAME:<arg fmt="%s" index="1">qmfir</arg> INSTANCE:<arg fmt="%s" index="2">qmfir_0</arg> - <arg fmt="%s" index="3">/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/pcores/qmfir_v1_00_a/data/qmfir_v2_1_0.mpd line 34</arg> - <arg fmt="%s" index="4">tool</arg> is overriding <arg fmt="%s" index="5">PARAMETER</arg> <arg fmt="%s" index="6">C_SPLB_SMALLEST_MASTER</arg> value to <arg fmt="%s" index="7">128</arg>
+</msg>
+
+</messages>
+

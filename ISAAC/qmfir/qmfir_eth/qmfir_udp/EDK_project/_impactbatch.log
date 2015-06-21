@@ -1,0 +1,70 @@
+iMPACT Version: Feb 12 2010 23:23:05
+
+iMPACT log file Started on Tue May  3 16:53:15 2011
+
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /etc/hotplug/usb/xusbdfwu.fw/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   42.50 C, Min. Reading:   42.50 C, Max.Reading:   44.47 C
+1: VCCINT Supply: Current Reading:   0.999 V, Min. Reading:   0.996 V, Max.Reading:   1.005 V
+1: VCCAUX Supply: Current Reading:   2.508 V, Min. Reading:   2.502 V, Max.Reading:   2.511 V
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+Elapsed time =     14 sec.

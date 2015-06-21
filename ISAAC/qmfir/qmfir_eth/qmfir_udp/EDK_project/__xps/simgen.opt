@@ -1,0 +1,1 @@
+ -p virtex5 -lang vhdl   $(PPC440_0_BOOTLOOP)  -msg __xps/ise/xmsgprops.lst -s mti -X /proj/sw/Xilinx/11.1/ISE/verilog/mti_se/6.5c/lin

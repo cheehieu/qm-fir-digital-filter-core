@@ -1,0 +1,36 @@
+##############################################################################
+## Filename:          /proj/users/hmnguyen/EDKproject/qmfir_2new/pcores/qmfir_v1_00_a/data/qmfir_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Feb 25 13:30:07 2011 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a or_muxcy vhdl
+lib proc_common_v3_00_a or_gate128 vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib plbv46_slave_single_v1_01_a plb_address_decoder vhdl
+lib plbv46_slave_single_v1_01_a plb_slave_attachment vhdl
+lib plbv46_slave_single_v1_01_a plbv46_slave_single vhdl
+lib interrupt_control_v2_01_a interrupt_control vhdl
+lib proc_common_v3_00_a inferred_lut4 vhdl
+lib proc_common_v3_00_a pf_counter_bit vhdl
+lib proc_common_v3_00_a pf_counter vhdl
+lib proc_common_v3_00_a pf_counter_top vhdl
+lib proc_common_v3_00_a pf_occ_counter vhdl
+lib proc_common_v3_00_a pf_occ_counter_top vhdl
+lib proc_common_v3_00_a pf_adder_bit vhdl
+lib proc_common_v3_00_a pf_adder vhdl
+lib proc_common_v3_00_a pf_dpram_select vhdl
+lib proc_common_v3_00_a srl16_fifo vhdl
+#lib dre_v2_00_a dsp48_mux vhdl
+#lib dre_v2_00_a tx_dre_top vhdl
+lib wrpfifo_v5_00_a pf_dly1_mux vhdl
+lib wrpfifo_v5_00_a wrpfifo_dp_cntl vhdl
+lib wrpfifo_v5_00_a ipif_control_wr_dre vhdl
+lib wrpfifo_v5_00_a wrpfifo_top vhdl
+lib qmfir_v1_00_a user_logic verilog
+lib qmfir_v1_00_a BRAM verilog
+lib qmfir_v1_00_a qmfir vhdl

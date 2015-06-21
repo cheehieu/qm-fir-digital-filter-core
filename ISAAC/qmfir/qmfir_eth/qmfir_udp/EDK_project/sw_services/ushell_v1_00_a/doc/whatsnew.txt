@@ -1,0 +1,335 @@
+**************************************************************************
+* uShell - A minimalist shell for the Xilinx Virtex PPC-class 
+* uProcessors
+*
+* ORIGINAL AUTHOR: Thomas Werne
+* COMPANY: Jet Propulsion Laboratory
+* VERSION: 1.00
+*
+* File: whatsnew.txt
+* $Author: werne $
+* $Date: 2010-02-08 12:07:53 -0800 (Mon, 08 Feb 2010) $
+* $Rev: 58 $
+*
+* Copyright 2009, 2010, by the California Institute of Technology.  ALL
+* RIGHTS RESERVED.  United States Government Sponsorship acknowledged.
+* Any commercial use must be negotiated with the Office of Technology
+* Transfer at the California Institute of Technology.
+*
+* This software may be subject to U.S. export control laws and
+* regulations.  By accepting this document, the user agrees to comply
+* with all U.S. export laws and regulations.  User has the
+* responsibility to obtain export licenses, or other export authority
+* as may be required before exporting such information to foreign
+* countries or providing access to foreign persons.
+**************************************************************************
+
+==========================================================================
+$Rev: 58 $
+--------------------------------------------------------------------------
+* Added support for multiport memory controller
+* Added support for Virtex 4 PPC 405
+==========================================================================
+
+==========================================================================
+Rev: 55 
+--------------------------------------------------------------------------
+* Several weeks of successful usage by 2-3 people => v1.00
+* Added Caltech copyright information
+* Small updates to documentation
+==========================================================================
+
+==========================================================================
+Rev: 55 
+--------------------------------------------------------------------------
+* Bugfix: fixed an error in the .mld file that complains "list
+  elements in braces followed by ;"
+* To reflect convention, renamed & updated print_usage |---> PRINT_USAGE
+==========================================================================
+
+==========================================================================
+Rev: 54 
+--------------------------------------------------------------------------
+* Version number update
+* Minor changes to generating .tcl files
+* Updated howto
+==========================================================================
+
+==========================================================================
+Rev: 53 
+--------------------------------------------------------------------------
+* Building respects conditional function inclusion (via .mss files).
+* Redefined all USHELL functions to be int()s
+* Reformatted files to get a little closer to being completely visible
+  on a Yx70 terminal.
+==========================================================================
+
+==========================================================================
+Rev: 52 
+--------------------------------------------------------------------------
+* Began work to get compilation on Microblaze processor.  I believe it
+  compiles, but I haven't fully tested it yet.
+* Changed parameter names in .mld file to be a little more sightly.
+* Minor other changes.
+==========================================================================
+
+==========================================================================
+Rev: 50 
+--------------------------------------------------------------------------
+* Print an oops on a non-existent function.
+==========================================================================
+
+==========================================================================
+Rev: 49 
+--------------------------------------------------------------------------
+* Updated example project to have an init() with interrupt handling
+==========================================================================
+
+==========================================================================
+Rev: 48 
+--------------------------------------------------------------------------
+* uShell works as a library in Xilinx
+* function_map doesn't respect the entries in ushell_config.h, so if
+  you disable any of the entries the build will break
+* Moved the screen clearing code to occur before all the other
+  initialization routines.
+* Removed stub _map and _config.h files (avoids potential problems
+  with make running before the files are generated)
+==========================================================================
+
+==========================================================================
+Rev: 47 
+--------------------------------------------------------------------------
+* Bugfix: removed reference to XExc...
+==========================================================================
+
+==========================================================================
+Rev: 46 
+--------------------------------------------------------------------------
+* Bugfix: removed reference to interrupt_initialize
+==========================================================================
+
+==========================================================================
+Rev: 45 
+--------------------------------------------------------------------------
+* Altered build system and incorporated it into the standard Xilinx
+  build.  Now uShell is selectable as a library in libgen.  uShell
+  builds under the new architecture, but it's not been tested yet.
+* Removed interrupt and cache code.  It's up to the user to attach the
+  ushell_uart_interrupt_handler to the UART as a receiver interrupt
+  handler and initializing io_sem.
+==========================================================================
+
+==========================================================================
+Rev: 44 
+--------------------------------------------------------------------------
+* Bugfix: Made execute_loop NOT static.
+* Bugfix: Fixed the code that turns on the Uart Interrupts.  Doesn't
+          really matter, this code should go away soon
+
+* Note: a minor update before a potentially big update.  I'm planning
+  to move the whole system into an actual library you can add from
+  libgen.
+
+==========================================================================
+
+==========================================================================
+Rev: 41 
+--------------------------------------------------------------------------
+* Bugfix: Moved execute_loop into ushell.c, where it belongs.  Added
+  an include to ushell_config.h in main.c, so that we actually get
+  responses to setting interrupt_driven mode
+
+==========================================================================
+
+==========================================================================
+Rev: 40 
+--------------------------------------------------------------------------
+* Changed `elf` target in Makefile to `standalone`.  This fixes the
+  potential bug of calling `make elf` when you mean to call `make`,
+  which produces a standalone ushell that DOESN'T include any other
+  project files.
+
+==========================================================================
+
+==========================================================================
+Rev: 39 
+--------------------------------------------------------------------------
+* Updated the version number that gets written to stdout
+* Changed the default prompt back to uShell
+
+==========================================================================
+
+==========================================================================
+Rev: 38
+--------------------------------------------------------------------------
+* Bugfix:  pointed mk_function_table.sh to /bin/bash due to bash-ism
+  in the script that is broken if /bin/sh points to another shell (DB)
+* Added an exec command that will extract an ELF file stored in memory
+  and execute it.
+* Bugfix:  changed io_sem to be volatile... it's given in interrupt
+  context and taken outside of interrupt context (DB & TW)
+* Added a print_usage macro that allows you to turn on/off function usage
+  printing via an entry in ushell_config.h.  Turning off usage saves
+  about 400 bytes on the full-blown system.
+* Use STDIN_BASEADDRESS instead of assuming the default name (DB)
+* Added an IP_REPO variable in ushell_variables.txt to allow you to
+  specify a global IP repository for xmd to use when search for
+  IP/drivers/OS/libraries. (DB)
+* Interrupt-driven code? Configurable.  Switching to non-interrupt
+  mode saves ~2K.
+* Included an empty.c source file and a linker script that allow you
+  to do a `make elf` to produce a uShell .elf file after adding
+  empty.c to the XPS project (otherwise it just echoes that you need to
+  add some source files).  You'll probably need to edit the linker
+  script a bit.
+* Created an ENABLE_CACHE config variable.  If you're not going to use
+  cache (for a bootloader, perhaps?), disabling this will save some
+  space.  (code must exist to disable the cache when doing `exec` calls.
+
+==========================================================================
+
+==========================================================================
+Rev: 36
+--------------------------------------------------------------------------
+
+* Major revision.   
+  - RS232 is now based on interrupts.  Expect this to become
+    configurable in a later release.
+  - Added a ushell_config.h.  This allows the user to remove certain
+    non-essential capabilities from the binary to decrease the size
+    (e.g. potentially unnecessary functions---help, ls, ...---,
+    retained history, ...).  With a minimal function set, you can have
+    a bootloader in less than 8K.
+  - Started work on a semaphore library.  Currently only used for the
+    UART, but could be used with interrupt handler.
+
+==========================================================================
+
+==========================================================================
+Rev: 34 
+--------------------------------------------------------------------------
+
+* Added a 'connect' target to Make.  Now you can run 'make connect' to
+  connect to your board.  Also, created a variable BAUD in
+  ushell_variables.txt
+
+==========================================================================
+
+==========================================================================
+Rev: 33 
+--------------------------------------------------------------------------
+
+* Bugfixes.
+
+==========================================================================
+
+==========================================================================
+Rev: 32 
+--------------------------------------------------------------------------
+
+* Improved the Makefile slightly.  Now you can also "make download"
+  from your ushell build directory which will load the program onto
+  the board.
+
+==========================================================================
+
+==========================================================================
+Rev: 31 
+--------------------------------------------------------------------------
+
+* Updated the build system to work with a single Makefile.  Now
+  instead of including all of the ushell project files (ushell.c,
+  main.c, ...), simply add ushell as a library to link against.  This
+  is also a first step in moving toward having polling/interrupt
+  driven projects automatically built via a variable set in
+  ushell_variables.txt.
+
+* As part of the above, you now need to specify the processor you want
+  to use in the ushell_variables.txt file.
+
+* Fixed a bug that required all project .c/.h files to be in the same
+  directory as ushell for their functions to appear in the list
+  command.
+
+==========================================================================
+
+==========================================================================
+Rev: 30 
+--------------------------------------------------------------------------
+
+* Bugfix in wr
+
+==========================================================================
+
+==========================================================================
+Rev: 29 
+--------------------------------------------------------------------------
+
+* Bugfix in dump
+
+==========================================================================
+
+==========================================================================
+Rev: 28 
+--------------------------------------------------------------------------
+
+* Changed the interface for specifying offsets to mrd, rrd, mwr, rwr.
+  The format is now:
+      mrd name[offset] [b|h|w]
+
+* Up & down arrows work more as you would expect them now.  
+  Ignore left and right arrows.  
+
+* Cleaned up some code, rewrote some library functions to save space.
+  We're back to around 10K when optimized for size.  There are still a
+  few standard function calls in there I can clean up.
+
+* Fixed 'dump' so it doesn't always spit out a multiple of 16 bytes
+
+==========================================================================
+
+==========================================================================
+Rev: 27
+--------------------------------------------------------------------------
+
+* Up & down arrows work in as a command history.  Not fully tested.
+  Currently somewhat kludgey.  Needed to break user-reconfigurability
+  of max command length and number of commands.  But it seems to work.
+  
+
+==========================================================================
+
+==========================================================================
+Rev: 26
+--------------------------------------------------------------------------
+
+* Added a copy command, which allows you to do block memory copies
+  within the shell environment
+
+
+==========================================================================
+
+==========================================================================
+Rev: 25
+--------------------------------------------------------------------------
+
+* Moved PPC 440 specific code into ppc440.c (halt & reboot).  You need to 
+  include this in your project source files.
+
+* The I/O loop no longer polls STDIN.  Now get_line goes out and looks at
+  the UART's control register to see if there is data.  If there is,
+  then get_line adds it to the string and processes as before.  If the
+  keypress is \r, then get_line returns 0, -1 otherwise.   main()
+  restarts the loop if it receives a -1 and calls execute if it
+  receives 0.  I had to move the prompt printing a bit to get this to
+  work out.  The net effect is that there is a user_loop function that
+  runs on each loop iteration that is user-programmable.
+
+* Code is now specific to the uartlite device.  This should be easy to
+  fix, if we ever build a project using the 16550 instead.
+
+==========================================================================
+
+Thomas Werne
+16 Nov 2009

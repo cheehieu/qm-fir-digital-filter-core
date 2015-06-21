@@ -1,0 +1,167 @@
+Release 11.5 - Bitgen L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+</proj/sw/Xilinx/11.1/EDK/virtex5/data/virtex5.acd> with local file
+</proj/sw/Xilinx/11.1/ISE/virtex5/data/virtex5.acd>
+Loading device for application Rf_Device from file '5vfx130t.nph' in environment
+/proj/sw/Xilinx/11.1/ISE:/proj/sw/Xilinx/11.1/EDK.
+   "system" is an NCD, version 3.2, device xc5vfx130t, package ff1738, speed -1
+Opened constraints file system.pcf.
+
+Wed Apr 20 13:46:34 2011
+
+/proj/sw/Xilinx/11.1/ISE/bin/lin/unwrapped/bitgen -w -g TdoPin:PULLNONE -g DriveDone:No -g StartUpClk:JTAGCLK -g DONE_cycle:4 -g GTS_cycle:5 -g TckPin:PULLUP -g TdiPin:PULLUP -g TmsPin:PULLUP -g DonePipe:No -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:NONE -g Persist:No system.ncd 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable*              |
++----------------------+----------------------+
+| DebugBitstream       | No*                  |
++----------------------+----------------------+
+| ConfigRate           | 2*                   |
++----------------------+----------------------+
+| StartupClk           | JtagClk              |
++----------------------+----------------------+
+| CclkPin              | Pullup*              |
++----------------------+----------------------+
+| DonePin              | Pullup*              |
++----------------------+----------------------+
+| HswapenPin           | Pullup*              |
++----------------------+----------------------+
+| M0Pin                | Pullup*              |
++----------------------+----------------------+
+| M1Pin                | Pullup*              |
++----------------------+----------------------+
+| M2Pin                | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup*              |
++----------------------+----------------------+
+| InitPin              | Pullup*              |
++----------------------+----------------------+
+| CsPin                | Pullup*              |
++----------------------+----------------------+
+| DinPin               | Pullup*              |
++----------------------+----------------------+
+| BusyPin              | Pullup*              |
++----------------------+----------------------+
+| RdWrPin              | Pullup*              |
++----------------------+----------------------+
+| TckPin               | Pullup**             |
++----------------------+----------------------+
+| TdiPin               | Pullup**             |
++----------------------+----------------------+
+| TdoPin               | Pullnone             |
++----------------------+----------------------+
+| TmsPin               | Pullup**             |
++----------------------+----------------------+
+| UnusedPin            | Pulldown*            |
++----------------------+----------------------+
+| GWE_cycle            | 6**                  |
++----------------------+----------------------+
+| GTS_cycle            | 5**                  |
++----------------------+----------------------+
+| OverTempPowerDown    | Disable*             |
++----------------------+----------------------+
+| LCK_cycle            | NoWait**             |
++----------------------+----------------------+
+| Match_cycle          | NoWait               |
++----------------------+----------------------+
+| DONE_cycle           | 4**                  |
++----------------------+----------------------+
+| Persist              | No**                 |
++----------------------+----------------------+
+| DriveDone            | No**                 |
++----------------------+----------------------+
+| DonePipe             | No**                 |
++----------------------+----------------------+
+| Security             | None**               |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF*          |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| Partial              | (Not Specified)*     |
++----------------------+----------------------+
+| Encrypt              | No*                  |
++----------------------+----------------------+
+| Key0                 | pick*                |
++----------------------+----------------------+
+| StartCBC             | pick*                |
++----------------------+----------------------+
+| KeyFile              | (Not Specified)*     |
++----------------------+----------------------+
+| DCIUpdateMode        | AsRequired*          |
++----------------------+----------------------+
+| ConfigFallback       | Enable*              |
++----------------------+----------------------+
+| SelectMAPAbort       | Enable*              |
++----------------------+----------------------+
+| BPI_page_size        | 1*                   |
++----------------------+----------------------+
+| BPI_1st_read_cycle   | 1*                   |
++----------------------+----------------------+
+| JTAG_SysMon          | Enable*              |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No*                  |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_0' updated to placement 'RAMB36_X4Y29' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_1' updated to placement 'RAMB36_X4Y28' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_2' updated to placement 'RAMB36_X4Y26' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_3' updated to placement 'RAMB36_X3Y24' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_4' updated to placement 'RAMB36_X3Y28' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_5' updated to placement 'RAMB36_X3Y27' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_6' updated to placement 'RAMB36_X4Y25' from design.
+
+
+INFO:Data2MEM:100 - BRAM 'xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_7' updated to placement 'RAMB36_X3Y26' from design.
+
+Running DRC.
+WARNING:PhysDesignRules:367 - The signal
+   <xps_bram_if_cntlr_0_port_BRAM_Addr<30>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <xps_bram_if_cntlr_0_port_BRAM_Addr<31>> is incomplete. The signal does not
+   drive any load pins in the design.
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'2200@cae-lmgr1,2200@cae-lmgr2,2200@cae-lmgr3'.
+INFO:Security:56 - Part 'xc5vfx130t' is not a WebPack part.
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - No license file was found.
+       Please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses")
+       to assist in obtaining a license.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Creating bit map...
+Saving bit stream in "system.bit".
+Bitstream generation is complete.

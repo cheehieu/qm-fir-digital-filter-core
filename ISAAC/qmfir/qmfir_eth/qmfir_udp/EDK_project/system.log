@@ -1,0 +1,605 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 11.5 Build EDK_LS5.70
+
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:3400 - Use of the repository located at /proj/sw/Xilinx/11.1/edk_user_repository/ 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+
+At Local date and time: Mon May  2 10:40:21 2011
+ make -f system.make download started...
+
+*********************************************
+Downloading Bitstream onto the target board
+*********************************************
+impact -batch etc/download.cmd
+Release 11.5 - iMPACT L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 280 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1100.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusbdfwu.hex = 1100.
+Firmware hex file version = 1100.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.59 C, Min. Reading:   21.83 C, Max.
+Reading:   36.59 C
+1: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   0.999 V, Max.
+Reading:   1.005 V
+1: VCCAUX Supply: Current Reading:   2.490 V, Min. Reading:   2.484 V, Max.
+Reading:   2.490 V
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =     13 sec.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+INFO:iMPACT - '1': Checking done pin....done.
+
+
+
+Done!
+
+Writing filter settings....
+
+Done writing filter settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.filters
+
+Done writing Tab View settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.gui
+
+Xilinx Platform Studio (XPS)
+Xilinx EDK 11.5 Build EDK_LS5.70
+
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:3400 - Use of the repository located at /proj/sw/Xilinx/11.1/edk_user_repository/ 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+
+Writing filter settings....
+
+Done writing filter settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.filters
+
+Done writing Tab View settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.gui
+
+WARNING:EDK:3400 - Use of the repository located at /proj/sw/Xilinx/11.1/edk_user_repository/ 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+
+Generating Block Diagram to Buffer 
+
+Generated Block Diagram SVG
+
+At Local date and time: Mon May  2 11:37:30 2011
+ make -f system.make download started...
+
+*********************************************
+Downloading Bitstream onto the target board
+*********************************************
+impact -batch etc/download.cmd
+Release 11.5 - iMPACT L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 280 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1100.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusbdfwu.hex = 1100.
+Firmware hex file version = 1100.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   43.98 C, Min. Reading:   40.04 C, Max.
+Reading:   44.47 C
+1: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   0.999 V, Max.
+Reading:   1.002 V
+1: VCCAUX Supply: Current Reading:   2.487 V, Min. Reading:   2.484 V, Max.
+Reading:   2.490 V
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =     13 sec.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+INFO:iMPACT - '1': Checking done pin....done.
+
+
+
+Done!
+
+Writing filter settings....
+
+Done writing filter settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.filters
+
+Done writing Tab View settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.gui
+
+Xilinx Platform Studio (XPS)
+Xilinx EDK 11.5 Build EDK_LS5.70
+
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:3400 - Use of the repository located at /proj/sw/Xilinx/11.1/edk_user_repository/ 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+
+At Local date and time: Tue May  3 09:21:55 2011
+ make -f system.make download started...
+
+make: Warning: File `system_incl.make' has modification time 3.1 s in the future
+
+*********************************************
+Downloading Bitstream onto the target board
+*********************************************
+impact -batch etc/download.cmd
+Release 11.5 - iMPACT L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 280 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1100.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusbdfwu.hex = 1100.
+Firmware hex file version = 1100.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   28.23 C, Min. Reading:   23.30 C, Max.
+Reading:   28.23 C
+1: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   0.999 V, Max.
+Reading:   1.005 V
+1: VCCAUX Supply: Current Reading:   2.487 V, Min. Reading:   2.487 V, Max.
+Reading:   2.490 V
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =     13 sec.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+INFO:iMPACT - '1': Checking done pin....done.
+
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+
+
+Done!
+
+Writing filter settings....
+
+Done writing filter settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.filters
+
+Done writing Tab View settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.gui
+
+WARNING:EDK:3400 - Use of the repository located at /proj/sw/Xilinx/11.1/edk_user_repository/ 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+
+At Local date and time: Tue May  3 09:44:02 2011
+ make -f system.make download started...
+
+*********************************************
+Downloading Bitstream onto the target board
+*********************************************
+impact -batch etc/download.cmd
+Release 11.5 - iMPACT L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 280 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1100.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusbdfwu.hex = 1100.
+Firmware hex file version = 1100.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   40.53 C, Min. Reading:   40.53 C, Max.
+Reading:   44.47 C
+1: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   1.002 V, Max.
+Reading:   1.005 V
+1: VCCAUX Supply: Current Reading:   2.490 V, Min. Reading:   2.487 V, Max.
+Reading:   2.490 V
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =     14 sec.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+INFO:iMPACT - '1': Checking done pin....done.
+
+
+
+Done!
+
+At Local date and time: Tue May  3 09:51:52 2011
+ make -f system.make download started...
+
+*********************************************
+Downloading Bitstream onto the target board
+*********************************************
+impact -batch etc/download.cmd
+Release 11.5 - iMPACT L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 280 mA.
+Type = 0x0605.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1100.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusbdfwu.hex = 1100.
+Firmware hex file version = 1100.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.10 C, Min. Reading:   34.62 C, Max.
+Reading:   36.10 C
+1: VCCINT Supply: Current Reading:   1.002 V, Min. Reading:   0.996 V, Max.
+Reading:   1.005 V
+1: VCCAUX Supply: Current Reading:   2.505 V, Min. Reading:   2.499 V, Max.
+Reading:   2.511 V
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =     14 sec.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+INFO:iMPACT - '1': Checking done pin....done.
+
+
+
+Done!
+
+Writing filter settings....
+
+Done writing filter settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.filters
+
+Done writing Tab View settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.gui
+
+WARNING:EDK:3400 - Use of the repository located at /proj/sw/Xilinx/11.1/edk_user_repository/ 
+(equivalent of $XILINX_EDK/../edk_user_repository) is now deprecated. 
+It is recommended that you use Global SearchPath preference to specify search paths that apply to all the projects.
+
+At Local date and time: Tue May  3 16:53:14 2011
+ make -f system.make download started...
+
+*********************************************
+Downloading Bitstream onto the target board
+*********************************************
+impact -batch etc/download.cmd
+Release 11.5 - iMPACT L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoDetecting cable. Please wait.
+Reusing A0010001 key.
+Reusing 24010001 key.
+ OS platform = i686.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /proj/sw/Xilinx/11.1/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /etc/hotplug/usb/xusbdfwu.fw/xusbdfwu.hex = 1030.
+ Using libusb.
+ Kernel release = 2.6.32-28-generic.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of /proj/sw/Xilinx/11.1/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc5vfx130t, Version : 2
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+'1': Loading file 'implementation/download.bit' ...
+INFO:iMPACT:1777 - 
+   Reading /proj/sw/Xilinx/11.1/ISE/virtex5/data/xc5vfx130t.bsd...
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Maximum TCK operating frequency for this device chain: 33000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   42.50 C, Min. Reading:   42.50 C, Max.
+Reading:   44.47 C
+1: VCCINT Supply: Current Reading:   0.999 V, Min. Reading:   0.996 V, Max.
+Reading:   1.005 V
+1: VCCAUX Supply: Current Reading:   2.508 V, Min. Reading:   2.502 V, Max.
+Reading:   2.511 V
+INFO:iMPACT:501 - '1': Added Device xc5vfx130t successfully.
+
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+'1': Programmed successfully.
+Elapsed time =     14 sec.
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 0011 1110 0000 1011 1010 0000 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Programing completed successfully.
+INFO:iMPACT - '1': Checking done pin....done.
+
+
+
+Done!
+
+Writing filter settings....
+
+Done writing filter settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.filters
+
+Done writing Tab View settings to:
+	/proj/users/hmnguyen/qmfir/qmfir_eth/qmfir_udp/EDK_project/__xps/system.gui
+

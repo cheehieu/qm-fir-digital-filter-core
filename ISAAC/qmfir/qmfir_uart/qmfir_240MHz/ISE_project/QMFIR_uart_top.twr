@@ -1,0 +1,288 @@
+--------------------------------------------------------------------------------
+Release 11.5 Trace  (lin64)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/11.1/ISE/bin/lin64/unwrapped/trce -ise
+/home/hmnguyen/qmfir_uart/qmfir_uart.ise -intstyle ise -v 3 -s 1 -fastpaths
+-xml QMFIR_uart_top.twx QMFIR_uart_top.ncd -o QMFIR_uart_top.twr
+QMFIR_uart_top.pcf -ucf QMFIR_uart_top.ucf
+
+Design file:              QMFIR_uart_top.ncd
+Physical constraint file: QMFIR_uart_top.pcf
+Device,package,speed:     xc5vfx130t,ff1738,-1 (PRODUCTION 1.66 2010-02-13, STEPPING level 0)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 16 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_core_clk1 = PERIOD TIMEGRP "core_clk1" 25.6 ns HIGH 50%;
+
+ 1529253 paths analyzed, 77047 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  13.576ns.
+--------------------------------------------------------------------------------
+Slack (setup path):     12.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3 (FF)
+  Destination:          QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_4 (FF)
+  Requirement:          25.600ns
+  Data Path Delay:      13.156ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.223ns (0.536 - 0.759)
+  Source Clock:         core_clk rising at 0.000ns
+  Destination Clock:    core_clk rising at 25.600ns
+  Clock Uncertainty:    0.197ns
+
+  Clock Uncertainty:          0.197ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.323ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3 to QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y98.DQ      Tcko                  0.450   QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt<3>
+                                                       QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3
+    SLICE_X9Y0.B5        net (fanout=397)      6.496   QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt<3>
+    SLICE_X9Y0.B         Tilo                  0.094   QM_FIR/firdecimI3/firdecim1/MAC1_a/mult<23>
+                                                       QM_FIR/FIR0QM/FIR0_module/RealFIR0/eff0_not00011
+    SLICE_X58Y89.CE      net (fanout=96)       5.887   QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff0_not0001
+    SLICE_X58Y89.CLK     Tceck                 0.229   QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1<7>
+                                                       QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_4
+    -------------------------------------------------  ---------------------------
+    Total                                     13.156ns (0.773ns logic, 12.383ns route)
+                                                       (5.9% logic, 94.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3 (FF)
+  Destination:          QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_6 (FF)
+  Requirement:          25.600ns
+  Data Path Delay:      13.156ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.223ns (0.536 - 0.759)
+  Source Clock:         core_clk rising at 0.000ns
+  Destination Clock:    core_clk rising at 25.600ns
+  Clock Uncertainty:    0.197ns
+
+  Clock Uncertainty:          0.197ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.323ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3 to QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y98.DQ      Tcko                  0.450   QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt<3>
+                                                       QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3
+    SLICE_X9Y0.B5        net (fanout=397)      6.496   QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt<3>
+    SLICE_X9Y0.B         Tilo                  0.094   QM_FIR/firdecimI3/firdecim1/MAC1_a/mult<23>
+                                                       QM_FIR/FIR0QM/FIR0_module/RealFIR0/eff0_not00011
+    SLICE_X58Y89.CE      net (fanout=96)       5.887   QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff0_not0001
+    SLICE_X58Y89.CLK     Tceck                 0.229   QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1<7>
+                                                       QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_6
+    -------------------------------------------------  ---------------------------
+    Total                                     13.156ns (0.773ns logic, 12.383ns route)
+                                                       (5.9% logic, 94.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.024ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3 (FF)
+  Destination:          QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_5 (FF)
+  Requirement:          25.600ns
+  Data Path Delay:      13.156ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.223ns (0.536 - 0.759)
+  Source Clock:         core_clk rising at 0.000ns
+  Destination Clock:    core_clk rising at 25.600ns
+  Clock Uncertainty:    0.197ns
+
+  Clock Uncertainty:          0.197ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.323ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path: QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3 to QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y98.DQ      Tcko                  0.450   QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt<3>
+                                                       QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt_3
+    SLICE_X9Y0.B5        net (fanout=397)      6.496   QM_FIR/FIR0QM/FIR0_module/firdecim_m4_n12_freqcalc/lkupcnt<3>
+    SLICE_X9Y0.B         Tilo                  0.094   QM_FIR/firdecimI3/firdecim1/MAC1_a/mult<23>
+                                                       QM_FIR/FIR0QM/FIR0_module/RealFIR0/eff0_not00011
+    SLICE_X58Y89.CE      net (fanout=96)       5.887   QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff0_not0001
+    SLICE_X58Y89.CLK     Tceck                 0.229   QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1<7>
+                                                       QM_FIR/FIR0QM/FIR0_module/ImagFIR0/eff1_5
+    -------------------------------------------------  ---------------------------
+    Total                                     13.156ns (0.773ns logic, 12.383ns route)
+                                                       (5.9% logic, 94.1% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_core_clk1 = PERIOD TIMEGRP "core_clk1" 25.6 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack (hold path):      0.237ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               uart_/uart_dout_30 (FF)
+  Destination:          bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.427ns (Levels of Logic = 0)
+  Clock Path Skew:      0.190ns (0.908 - 0.718)
+  Source Clock:         core_clk rising at 25.600ns
+  Destination Clock:    core_clk rising at 25.600ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: uart_/uart_dout_30 to bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X43Y89.CQ         Tcko                  0.414   uart_/uart_dout<31>
+                                                          uart_/uart_dout_30
+    RAMB36_X3Y17.DIADIU1    net (fanout=1)        0.299   uart_/uart_dout<30>
+    RAMB36_X3Y17.CLKARDCLKU Trckd_DIA   (-Th)     0.286   bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+                                                          bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.427ns (0.128ns logic, 0.299ns route)
+                                                          (30.0% logic, 70.0% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.274ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               uart_/uart_dout_26 (FF)
+  Destination:          bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.439ns (Levels of Logic = 0)
+  Clock Path Skew:      0.165ns (0.935 - 0.770)
+  Source Clock:         core_clk rising at 25.600ns
+  Destination Clock:    core_clk rising at 25.600ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: uart_/uart_dout_26 to bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X42Y84.CQ         Tcko                  0.414   uart_/uart_dout<27>
+                                                          uart_/uart_dout_26
+    RAMB36_X3Y16.DIPADIPL0  net (fanout=2)        0.311   uart_/uart_dout<26>
+    RAMB36_X3Y16.CLKARDCLKL Trckd_DIPA  (-Th)     0.286   bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+                                                          bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.439ns (0.128ns logic, 0.311ns route)
+                                                          (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+Slack (hold path):      0.278ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               uart_/uart_dout_26 (FF)
+  Destination:          bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP (RAM)
+  Requirement:          0.000ns
+  Data Path Delay:      0.439ns (Levels of Logic = 0)
+  Clock Path Skew:      0.161ns (0.931 - 0.770)
+  Source Clock:         core_clk rising at 25.600ns
+  Destination Clock:    core_clk rising at 25.600ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: uart_/uart_dout_26 to bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X42Y84.CQ         Tcko                  0.414   uart_/uart_dout<27>
+                                                          uart_/uart_dout_26
+    RAMB36_X3Y16.DIPADIPU0  net (fanout=2)        0.311   uart_/uart_dout<26>
+    RAMB36_X3Y16.CLKARDCLKU Trckd_DIPA  (-Th)     0.286   bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+                                                          bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[2].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP
+    ----------------------------------------------------  ---------------------------
+    Total                                         0.439ns (0.128ns logic, 0.311ns route)
+                                                          (29.2% logic, 70.8% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_core_clk1 = PERIOD TIMEGRP "core_clk1" 25.6 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 23.378ns (period - min period limit)
+  Period: 25.600ns
+  Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
+  Physical resource: bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP/CLKAL
+  Logical resource: bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP/CLKAL
+  Location pin: RAMB36_X3Y17.CLKARDCLKL
+  Clock network: core_clk
+--------------------------------------------------------------------------------
+Slack: 23.378ns (period - min period limit)
+  Period: 25.600ns
+  Min period limit: 2.222ns (450.045MHz) (Trper_CLKA)
+  Physical resource: bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP/CLKAU
+  Logical resource: bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP/CLKAU
+  Location pin: RAMB36_X3Y17.CLKARDCLKU
+  Clock network: core_clk
+--------------------------------------------------------------------------------
+Slack: 23.378ns (period - min period limit)
+  Period: 25.600ns
+  Min period limit: 2.222ns (450.045MHz) (Trper_CLKB)
+  Physical resource: bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP/CLKBL
+  Logical resource: bramin_/BU2/U0/blk_mem_generator/valid.cstr/ramloop[3].ram.r/v5_init.ram/SDP.SINGLE_PRIM36.TDP/CLKBL
+  Location pin: RAMB36_X3Y17.CLKBWRCLKL
+  Clock network: core_clk
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   13.576|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 1529253 paths, 0 nets, and 64002 connections
+
+Design statistics:
+   Minimum period:  13.576ns{1}   (Maximum frequency:  73.659MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Apr 19 10:19:23 2011 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 928 MB
+
+Total REAL time to Trace completion: 29 secs 
+Total CPU time to Trace completion: 29 secs 
+
+
+

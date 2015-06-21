@@ -1,0 +1,20 @@
+ppc440_0
+QMFIR_DBG_SOURCES = sw_src/qmfir_dbg/qmfir_selftest.c sw_src/qmfir_dbg/qmfir.c 
+QMFIR_DBG_HEADERS = sw_src/qmfir_dbg/qmfir.h 
+QMFIR_DBG_CC = powerpc-eabi-gcc
+QMFIR_DBG_CC_SIZE = powerpc-eabi-size
+QMFIR_DBG_CC_OPT = -O2
+QMFIR_DBG_CFLAGS = 
+QMFIR_DBG_CC_SEARCH = # -B
+QMFIR_DBG_LIBPATH = -L./ppc440_0/lib/ # -L
+QMFIR_DBG_INCLUDES = -I./ppc440_0/include/  -Isw_src/qmfir_dbg/ # -I
+QMFIR_DBG_LFLAGS =   -llwip4 
+QMFIR_DBG_LINKER_SCRIPT = 
+QMFIR_DBG_CC_DEBUG_FLAG =  -g 
+QMFIR_DBG_CC_PROFILE_FLAG = # -pg
+QMFIR_DBG_CC_GLOBPTR_FLAG= # -msdata=eabi
+QMFIR_DBG_CC_INFERRED_FLAGS= -mcpu=440 
+QMFIR_DBG_CC_START_ADDR_FLAG= -Wl,-defsym -Wl,_START_ADDR=0x00000000
+QMFIR_DBG_CC_STACK_SIZE_FLAG= -Wl,-defsym -Wl,_STACK_SIZE=0x1000
+QMFIR_DBG_CC_HEAP_SIZE_FLAG= -Wl,-defsym -Wl,_HEAP_SIZE=0x1000
+                  $(QMFIR_DBG_CC_INFERRED_FLAGS)  \

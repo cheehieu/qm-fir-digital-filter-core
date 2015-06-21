@@ -1,0 +1,3 @@
+ f_noi=65
+ssi_ms6_240_freq
+exit

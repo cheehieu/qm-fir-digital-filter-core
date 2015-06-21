@@ -1,0 +1,4 @@
+xst -ise "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.ise" -intstyle ise -ifn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.xst" -ofn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.syr" 
+xst -ise "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.ise" -intstyle ise -ifn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.xst" -ofn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.syr" 
+xst -ise "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.ise" -intstyle ise -ifn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.xst" -ofn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.syr" 
+xst -ise "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.ise" -intstyle ise -ifn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.xst" -ofn "/home/hmnguyen/qmfir_uart_test2_60MHz/ipcore_dir/BRAM_larg.syr" 

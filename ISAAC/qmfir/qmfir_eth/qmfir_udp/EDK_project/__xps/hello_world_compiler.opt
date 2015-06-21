@@ -1,0 +1,20 @@
+ppc440_0
+HELLO_WORLD_SOURCES = sw_src/hello_world/hello_world.c sw_src/hello_world/xlltemac_example_polled.c sw_src/hello_world/xlltemac_example_intr_fifo.c sw_src/hello_world/xlltemac_example_util.c sw_src/hello_world/xintc_tapp_example.c 
+HELLO_WORLD_HEADERS = sw_src/hello_world/lltemac_intr_header.h sw_src/hello_world/lltemac_header.h sw_src/hello_world/xlltemac_example.h 
+HELLO_WORLD_CC = powerpc-eabi-gcc
+HELLO_WORLD_CC_SIZE = powerpc-eabi-size
+HELLO_WORLD_CC_OPT = -O2
+HELLO_WORLD_CFLAGS = 
+HELLO_WORLD_CC_SEARCH = # -B
+HELLO_WORLD_LIBPATH = -L./ppc440_0/lib/ # -L
+HELLO_WORLD_INCLUDES = -I./ppc440_0/include/  -Isw_src/hello_world/ # -I
+HELLO_WORLD_LFLAGS = # -l
+HELLO_WORLD_LINKER_SCRIPT = 
+HELLO_WORLD_CC_DEBUG_FLAG =  -g 
+HELLO_WORLD_CC_PROFILE_FLAG = # -pg
+HELLO_WORLD_CC_GLOBPTR_FLAG= # -msdata=eabi
+HELLO_WORLD_CC_INFERRED_FLAGS= -mcpu=440 
+HELLO_WORLD_CC_START_ADDR_FLAG= -Wl,-defsym -Wl,_START_ADDR=0xffff8000
+HELLO_WORLD_CC_STACK_SIZE_FLAG= -Wl,-defsym -Wl,_STACK_SIZE=0x1000
+HELLO_WORLD_CC_HEAP_SIZE_FLAG= -Wl,-defsym -Wl,_HEAP_SIZE=0x1000
+                  $(HELLO_WORLD_CC_INFERRED_FLAGS)  \

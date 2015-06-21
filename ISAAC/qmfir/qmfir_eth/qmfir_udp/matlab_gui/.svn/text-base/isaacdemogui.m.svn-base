@@ -1,0 +1,204 @@
+function isaacdemogui
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% File: isaacdemogui.m
+%
+% $Rev$
+% $Author$
+% $Date$
+%
+%
+% GUI interface for the ISAAC Newton Demo
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  Initialize and hide the GUI as it is being constructed.
+f = figure('Visible','off','Colormap',[1,1,1],'Position',[20,80,1400,750]);
+
+% Construct the components.
+hbox = uicontrol('Style','text','BackgroundColor',[0.95,1,1],'Position',[1280,0,1400,750]);
+hbox2 = uicontrol('Style','text','BackgroundColor',[.95,1,1],'Position',[1200,700,1400,200]);
+hnewfigure  = uicontrol('Style','pushbutton',...
+    'String','New Figure','Position',[1300,30,90,25],...
+    'Callback',{@newfigure_Callback});
+%    hRESET  = uicontrol('Style','pushbutton','BackgroundColor',[1,1,.8],...
+%                 'String','RESET','Position',[1300,630,70,25],...
+%                'Callback',{@RESETbutton_Callback});
+hSTART   = uicontrol('Style','pushbutton','ForegroundColor','b',...
+    'BackgroundColor',[1,.3,.7],'FontSize',10,...
+    'String','START','Position',[1300,590,70,25],...
+    'FontWeight','bold','Callback',{@STARTbutton_Callback});
+htextRotate  = uicontrol('Style','text','String','Starting point for rotation 3100 to 14000',...
+    'BackgroundColor',[.95,1,1],'Position',[1300,530,100,45]);
+hedit_numRotate = uicontrol('Style','edit',...
+    'BackgroundColor','w','Position',[1310,510,60,15],'string','3100',...
+    'Callback',{@edit_Rotate_Callback});
+htextRotation  = uicontrol('Style','text','String','Increment step',...
+    'BackgroundColor',[.95,1,1],'Position',[1300,480,100,15]);
+hpopup_numRotation = uicontrol('Style','popupmenu',...
+    'BackgroundColor','w','String',{'500','1000','2000','3000','6000'},...
+    'Position',[1330,450,70,25],...
+    'Callback',{@popup_Rotation_Callback});
+htextnum2repeat = uicontrol('Style','text','String','Number of times to repeat',...
+    'BackgroundColor',[.95,1,1],'Position',[1300,390,90,45]);
+hnum2repeat = uicontrol('Style','edit',...
+    'BackgroundColor','w','Position',[1310,370,60,15],'string','1',...
+    'Callback',{@edit_num2repeat_Callback});
+hcheckbox_NewData = uicontrol('Style','checkbox','FontSize',10,...
+    'BackgroundColor',[.95,1,1],'String','Do not generate new data','SelectionHighlight','on',...
+    'Position',[1200,730,200,25],....
+    'Callback',{@checkbox_NewData_Callback});
+hcheckbox_Freq = uicontrol('Style','checkbox','FontSize',10,...
+    'BackgroundColor',[.95,1,1],'String','Do not generate pulse',...
+    'Position',[1200,700,200,25],....
+    'Callback',{@checkbox_Freq_Callback});
+hcheckbox_Freq2 = uicontrol('Style','text','FontSize',10,...
+    'BackgroundColor',[.95,1,1],'String','compression',...
+    'Position',[1280,685,90,15],....
+    'Callback',{@checkbox_Freq_Callback});
+hcheckbox_compare = uicontrol('Style','checkbox','FontSize',8,...
+    'BackgroundColor',[.95,1,1],'String','Choose Functional','SelectionHighlight','on',...
+    'Position',[1280,100,150,25],....
+    'Callback',{@checkbox_Compare_Callback});
+hcheckbox_compare2 = uicontrol('Style','text','BackgroundColor',[.95,1,1],...
+    'String','Error','FontSize',8,'SelectionHighlight','on',...
+    'Position',[1290,75,80,25]);
+htextHost  = uicontrol('Style','text','String','HOST IP:',...
+    'BackgroundColor','w','FontWeight','bold','FontSize',12,'Position',[20,730,90,20]);
+heditHost = uicontrol('Style','edit','String','192.168.0.1',...
+    'BackgroundColor','w','FontSize',12,'Position',[120,730,110,20],...
+    'Callback',{@edit_Host_Callback});
+htextHostPort = uicontrol('Style','text','String','HOST PORT:',...
+    'BackgroundColor','w','FontWeight','bold','FontSize',12,'Position',[250,730,100,20]);
+heditHostPort = uicontrol('Style','edit','String','61557',...
+    'BackgroundColor','w','FontSize',12,'Position',[360,730,100,20],...
+    'Callback',{@edit_HostPort_Callback});
+htextRemote  = uicontrol('Style','text','String','REMOTE IP:',...
+    'BackgroundColor','w','FontWeight','bold','FontSize',12,'Position',[500,730,100,20]);
+heditRemote = uicontrol('Style','edit','String','192.168.0.15',...
+    'BackgroundColor','w','FontSize',12,'Position',[610, 730, 120, 20],...
+    'Callback',{@edit_Remote_Callback});
+htextRemotePort  = uicontrol('Style','text','String','REMOTE PORT:',...
+    'BackgroundColor','w','FontWeight','bold','FontSize',12,'Position',[740,730,120,20]);
+heditRemotePort = uicontrol('Style','edit','String','61557',...
+    'FontSize',12','Position',[870,730,100,20],'BackgroundColor','w',...
+    'Callback',{@edit_RemotePort_Callback});
+htime = uicontrol('Style','text','String','DELAY IN SECONDS:','FontWeight','b',...
+    'BackgroundColor',[1,0.75,1],'FontSize',10,'Position',[10,700,200,15]);
+align([hSTART,htextRotate,hedit_numRotate,htextRotation,hnewfigure,hpopup_numRotation,htextnum2repeat,hnum2repeat],'Center','None');
+ha = axes('Units','pixels','Position',[25,25,1250,700]);
+
+% Initialize the GUI.
+% Change units to normalized so components resize automatically.
+set([f,hbox,hbox2,hSTART,heditHost,hcheckbox_compare,hcheckbox_compare2,heditHostPort,heditRemote,heditRemotePort,hedit_numRotate,htextRotate,htextRotation,hnewfigure,hpopup_numRotation,ha,htextHostPort,htextHost,htextRemotePort,htextnum2repeat,hnum2repeat,htextRemote,hcheckbox_NewData,hcheckbox_Freq,hcheckbox_Freq2,htime],'Units','normalized');
+
+% Assign the GUI a name to appear in the window title.
+set(f,'Name',' ISAAC NEWTON DEMO');
+% Move the GUI to the center of the screen.
+movegui(f,'center');
+
+% Default inputs to the demo program
+inputRotation = 3000;
+inputRotate = 3100;
+repeat = 1;
+gennew = 0;
+freqNplot = 0;
+host = '192.168.0.1';
+port = 61557;
+remote = '192.168.0.15';
+remoteport = 61557;
+compare = 0;
+
+% Make the GUI visible.
+set(f,'Visible','on');
+
+
+%  Pop-up menu callback. Read the pop-up menu Value property
+%  to determine which item is currently displayed and make it
+%  the current data
+    function edit_Rotate_Callback(hObject, eventdata, handles)
+        user_string = get(hObject, 'String');
+        inputRotate = str2num(user_string);
+    end
+
+    function edit_num2repeat_Callback(hObject, eventdata, handles)
+        user_string = get(hObject, 'String');
+        repeat = str2num(user_string);
+    end
+
+    function popup_Rotation_Callback(source,eventdata)
+        str = get(source, 'String');
+        val = get(source, 'Value');
+        switch str{val};
+            case '6000'
+                inputRotation = 6000;
+            case '3000'
+                inputRotation = 3000;
+            case '2000'
+                inputRotation = 2000;
+            case '1000'
+                inputRotation = 1000;
+            case '500'
+                inputRotation = 500;
+        end
+    end
+
+    function checkbox_NewData_Callback(source,eventdata)
+        if (get(source,'Value') == get(source,'Max'))
+            gennew = 1;
+        else
+            gennew = 0;
+        end
+    end
+
+    function checkbox_Freq_Callback(source,eventdata)
+        if (get(source,'Value') == get(source,'Max'))
+            freqNplot = 1;
+        else
+            freqNplot = 0;
+        end
+    end
+
+    function STARTbutton_Callback(source,eventdata)
+        %Run the program to start transferring data over
+        drawnow;
+        fprintf('\n\nSTARTING PROGRAM\n');
+        qmfir_udp_demo(compare, gennew, freqNplot, repeat, inputRotation,inputRotate,host,port,remote,remoteport);
+    end
+
+%   function RESETbutton_Callback(source,eventdata)
+%       ResetFunction;
+%   end
+
+    function newfigure_Callback(source,eventdata)
+        delete(figure(1));
+        isaacdemogui;
+    end
+
+    function edit_Host_Callback(hObject, eventdata, handles)
+        host = get(hObject, 'String');
+    end
+
+    function edit_Port_Callback(hObject, eventdata, handles)
+        user_string = get(hObject, 'String');
+        port = str2num(user_string);
+    end
+
+    function edit_Remote_Callback(hObject, eventdata, handles)
+        remote = get(hObject, 'String');
+    end
+
+    function edit_RemotePort_Callback(hObject, eventdata, handles)
+        user_string = get(hObject, 'String');
+        remoteport = str2num(user_string);
+    end
+    function checkbox_Compare_Callback(source,eventdata)
+        if (get(source,'Value') == get(source,'Max'))
+            compare = 1;
+        else
+            compare = 0;
+        end
+    end
+
+end

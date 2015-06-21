@@ -1,0 +1,36 @@
+// BMM LOC annotation file.
+//
+// Release 11.1 - Data2MEM L.70, build 1.6 Jun 5, 2009
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Processor 'ppc440_0', ID 100, memory map.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+ADDRESS_MAP ppc440_0 PPC440 100
+
+
+    ///////////////////////////////////////////////////////////////////////////////
+    //
+    // Processor 'ppc440_0' address space 'xps_bram_if_cntlr_0_bram_combined' 0xFFFF8000:0xFFFFFFFF (32 KBytes).
+    //
+    ///////////////////////////////////////////////////////////////////////////////
+
+    ADDRESS_SPACE xps_bram_if_cntlr_0_bram_combined RAMB32 [0xFFFF8000:0xFFFFFFFF]
+        BUS_BLOCK
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_0 [63:56] PLACED = X4Y29;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_1 [55:48] PLACED = X4Y28;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_2 [47:40] PLACED = X4Y26;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_3 [39:32] PLACED = X3Y24;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_4 [31:24] PLACED = X3Y28;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_5 [23:16] PLACED = X3Y27;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_6 [15:8] PLACED = X4Y25;
+            xps_bram_if_cntlr_0_bram/xps_bram_if_cntlr_0_bram/ramb36_7 [7:0] PLACED = X3Y26;
+        END_BUS_BLOCK;
+    END_ADDRESS_SPACE;
+
+END_ADDRESS_MAP;
+

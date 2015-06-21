@@ -1,0 +1,23 @@
+##############################################################################
+## Filename:          /proj/users/hmnguyen/EDKproject/qmfir_2new/drivers/qmfir_v1_00_a/data/qmfir_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Fri Feb 25 13:30:20 2011 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER qmfir
+
+  OPTION supported_peripherals = (qmfir);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+  BEGIN ARRAY interrupt_handler
+    PROPERTY desc = "Interrupt Handler Information";
+    PROPERTY size = 1, permit = none;
+    PARAM name = int_handler, default = QMFIR_Intr_DefaultHandler, desc = "Name of Interrupt Handler", type = string;
+    PARAM name = int_port, default = IP2INTC_Irpt, desc = "Interrupt pin associated with the interrupt handler", permit = none;
+
+  END ARRAY
+
+END DRIVER

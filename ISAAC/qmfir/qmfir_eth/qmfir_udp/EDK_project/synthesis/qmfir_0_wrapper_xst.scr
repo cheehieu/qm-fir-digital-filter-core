@@ -1,0 +1,13 @@
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vfx130tff1738-1
+-top qmfir_0_wrapper
+-ifmt MIXED
+-ifn qmfir_0_wrapper_xst.prj
+-ofn ../implementation/qmfir_0_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation/qmfir_0_wrapper}
+-vlgincdir {"/proj/users/hmnguyen/qmfir_digital_filter_cores/qmfir_eth/qmfir_udp/EDK_project/pcores/" "/proj/sw/Xilinx/11.1/edk_user_repository/MyProcessorIPLib/pcores/" "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/" }

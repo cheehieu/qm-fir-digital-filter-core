@@ -1,0 +1,980 @@
+Release 11.5 - xst L.70 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> 
+PMSPEC -- Overriding Xilinx file </proj/sw/Xilinx/11.1/EDK/virtex5/data/virtex5.acd> with local file </proj/sw/Xilinx/11.1/ISE/virtex5/data/virtex5.acd>
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "xps_bram_if_cntlr_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/proj/users/hmnguyen/EDKproject/qmfir_new/pcores/" "/proj/sw/Xilinx/11.1/edk_user_repository/MyProcessorIPLib/pcores/" "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc5vfx130tff1738-1
+Output File Name                   : "../implementation/xps_bram_if_cntlr_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : xps_bram_if_cntlr_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/xps_bram_if_cntlr_0_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" in Library proc_common_v3_00_a.
+Entity <muxf_struct> compiled.
+Entity <muxf_struct> (Architecture <imp>) compiled.
+Entity <muxf_struct_f> compiled.
+Entity <muxf_struct_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" in Library proc_common_v3_00_a.
+Entity <cntr_incr_decr_addn_f> compiled.
+Entity <cntr_incr_decr_addn_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_f> compiled.
+Entity <dynshreg_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <counter_bit> compiled.
+Entity <counter_bit> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy_f> compiled.
+Entity <or_muxcy_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu_f> compiled.
+Entity <srl_fifo_rbu_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" in Library proc_common_v3_00_a.
+Package <family> compiled.
+Package body <family> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" in Library proc_common_v3_00_a.
+Entity <Counter> compiled.
+Entity <Counter> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" in Library proc_common_v3_00_a.
+Package <Common_Types> compiled.
+WARNING:HDLParsers:3534 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" Line 223. In the function Get_RLOC_Name, not all control paths contain a return statement.
+Package body <Common_Types> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" in Library proc_common_v3_00_a.
+Package <conv_funs_pkg> compiled.
+Package body <conv_funs_pkg> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <async_fifo_fg> compiled.
+Entity <async_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" in Library proc_common_v3_00_a.
+Entity <sync_fifo_fg> compiled.
+Entity <sync_fifo_fg> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" in Library proc_common_v3_00_a.
+Entity <addsub> compiled.
+Entity <addsub> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr> compiled.
+Entity <direct_path_cntr> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" in Library proc_common_v3_00_a.
+Entity <direct_path_cntr_ai> compiled.
+Entity <direct_path_cntr_ai> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" in Library proc_common_v3_00_a.
+Entity <down_counter> compiled.
+Entity <down_counter> (Architecture <simulation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" in Library proc_common_v3_00_a.
+Entity <eval_timer> compiled.
+Entity <eval_timer> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" in Library proc_common_v3_00_a.
+Entity <IPIF_Steer> compiled.
+Entity <IPIF_Steer> (Architecture <IMP>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_steer128> compiled.
+Entity <ipif_steer128> (Architecture <IMP>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" in Library proc_common_v3_00_a.
+Entity <ipif_mirror128> compiled.
+Entity <ipif_mirror128> (Architecture <IMP>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg> compiled.
+Entity <ld_arith_reg> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" in Library proc_common_v3_00_a.
+Entity <ld_arith_reg2> compiled.
+Entity <ld_arith_reg2> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot> compiled.
+Entity <mux_onehot> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" in Library proc_common_v3_00_a.
+Entity <or_bits> compiled.
+Entity <or_bits> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate> compiled.
+Entity <or_gate> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" in Library proc_common_v3_00_a.
+Entity <pselect> compiled.
+Entity <pselect> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_mask> compiled.
+Entity <pselect_mask> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <SRL_FIFO> compiled.
+Entity <SRL_FIFO> (Architecture <IMP>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo2> compiled.
+Entity <srl_fifo2> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo3> compiled.
+Entity <srl_fifo3> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_rbu> compiled.
+Entity <srl_fifo_rbu> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" in Library proc_common_v3_00_a.
+Entity <valid_be> compiled.
+Entity <valid_be> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_with_enable_f> compiled.
+Entity <or_with_enable_f> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" in Library proc_common_v3_00_a.
+Entity <dynshreg_i_f> compiled.
+Entity <dynshreg_i_f> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" in Library proc_common_v3_00_a.
+Entity <mux_onehot_f> compiled.
+Entity <mux_onehot_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" in Library proc_common_v3_00_a.
+Entity <srl_fifo_f> compiled.
+Entity <srl_fifo_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" in Library proc_common_v3_00_a.
+Entity <compare_vectors_f> compiled.
+Entity <compare_vectors_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate_f> compiled.
+Entity <or_gate_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" in Library proc_common_v3_00_a.
+Entity <soft_reset> compiled.
+Entity <soft_reset> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_be_reset_gen.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_be_reset_gen> compiled.
+Entity <xbic_be_reset_gen> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_addr_be_support.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_addr_be_support> compiled.
+Entity <xbic_addr_be_support> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_addr_decode.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_addr_decode> compiled.
+Entity <xbic_addr_decode> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_addr_cntr.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_addr_cntr> compiled.
+Entity <xbic_addr_cntr> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_dbeat_control.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_dbeat_control> compiled.
+Entity <xbic_dbeat_control> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_data_steer_mirror.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_data_steer_mirror> compiled.
+Entity <xbic_data_steer_mirror> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_slave_attach_sngl.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_slave_attach_sngl> compiled.
+Entity <xbic_slave_attach_sngl> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_slave_attach_burst.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xbic_slave_attach_burst> compiled.
+Entity <xbic_slave_attach_burst> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xps_bram_if_cntlr.vhd" in Library xps_bram_if_cntlr_v1_00_b.
+Entity <xps_bram_if_cntlr> compiled.
+Entity <xps_bram_if_cntlr> (Architecture <implementation>) compiled.
+Compiling vhdl file "/proj/users/hmnguyen/EDKproject/qmfir_new/hdl/xps_bram_if_cntlr_0_wrapper.vhd" in Library work.
+Entity <xps_bram_if_cntlr_0_wrapper> compiled.
+Entity <xps_bram_if_cntlr_0_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <xps_bram_if_cntlr_0_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <xps_bram_if_cntlr> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_BASEADDR = "11111111111111111000000000000000"
+	C_FAMILY = "virtex5"
+	C_HIGHADDR = "11111111111111111111111111111111"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 64
+	C_SPLB_NUM_MASTERS = 1
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 128
+	C_SPLB_SUPPORT_BURSTS = 1
+
+Analyzing hierarchy for entity <xbic_slave_attach_burst> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111000000000000000",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_CACHLINE_ADDR_MODE = 0
+	C_FAMILY = "virtex5"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 64
+	C_SPLB_NUM_MASTERS = 1
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 128
+
+Analyzing hierarchy for entity <xbic_addr_be_support> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_NATIVE_DWIDTH = 64
+
+Analyzing hierarchy for entity <xbic_addr_decode> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111000000000000000",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_FAMILY = "virtex5"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_NATIVE_DWIDTH = 64
+
+Analyzing hierarchy for entity <xbic_addr_cntr> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_ADDR_CNTR_WIDTH = 32
+	C_CACHLINE_ADDR_MODE = 0
+	C_NATIVE_DWIDTH = 64
+	C_PLB_AWIDTH = 32
+	C_SMALLEST_MASTER = 128
+
+Analyzing hierarchy for entity <xbic_dbeat_control> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_FAMILY = "virtex5"
+	C_NATIVE_DWIDTH = 64
+
+Analyzing hierarchy for entity <xbic_data_steer_mirror> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_SMALLEST_MASTER = 128
+	C_SPLB_DWIDTH = 128
+	C_SPLB_NATIVE_DWIDTH = 64
+	C_STEER_ADDR_WIDTH = 6
+
+Analyzing hierarchy for entity <xbic_be_reset_gen> in library <xps_bram_if_cntlr_v1_00_b> (architecture <implementation>) with generics.
+	C_NATIVE_DWIDTH = 64
+	C_SMALLEST = 128
+
+Analyzing hierarchy for entity <counter_f> in library <proc_common_v3_00_a> (architecture <imp>) with generics.
+	C_FAMILY = "virtex5"
+	C_NUM_BITS = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <xps_bram_if_cntlr_0_wrapper> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:37 - Detected unknown constraint/property "SPECIAL". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <SPLB_Clk> in unit <xps_bram_if_cntlr>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+    Set property "MAX_FANOUT = 10000" for signal <SPLB_Rst> in unit <xps_bram_if_cntlr>.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SPECIAL". This constraint/property is not supported by the current software release and will be ignored.
+Entity <xps_bram_if_cntlr_0_wrapper> analyzed. Unit <xps_bram_if_cntlr_0_wrapper> generated.
+
+Analyzing generic Entity <xps_bram_if_cntlr> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_BASEADDR = "11111111111111111000000000000000"
+	C_FAMILY = "virtex5"
+	C_HIGHADDR = "11111111111111111111111111111111"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 64
+	C_SPLB_NUM_MASTERS = 1
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 128
+	C_SPLB_SUPPORT_BURSTS = 1
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+Entity <xps_bram_if_cntlr> analyzed. Unit <xps_bram_if_cntlr> generated.
+
+Analyzing generic Entity <xbic_slave_attach_burst> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111000000000000000",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_CACHLINE_ADDR_MODE = 0
+	C_FAMILY = "virtex5"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_MID_WIDTH = 1
+	C_SPLB_NATIVE_DWIDTH = 64
+	C_SPLB_NUM_MASTERS = 1
+	C_SPLB_P2P = 0
+	C_SPLB_SMALLEST_MASTER = 128
+    Set user-defined property "INIT =  0" for instance <I_FLOP_REARB> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_ADDRACK> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_SET_SLBUSY> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_CLR_SL_BUSY> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_WRACK_2BUS> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_WRACK> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_WREN> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_RDACK_2BUS> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_RDACK_EARLY1> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_RDACK_EARLY2> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_RDCOMP> in unit <xbic_slave_attach_burst>.
+    Set user-defined property "INIT =  0" for instance <I_FLOP_RDBTERM> in unit <xbic_slave_attach_burst>.
+INFO:Xst:2679 - Register <sl_rdwdaddr_i<0>> in unit <xbic_slave_attach_burst> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <xbic_slave_attach_burst> analyzed. Unit <xbic_slave_attach_burst> generated.
+
+Analyzing generic Entity <xbic_addr_be_support> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_SPLB_AWIDTH = 32
+	C_SPLB_DWIDTH = 128
+	C_SPLB_NATIVE_DWIDTH = 64
+Entity <xbic_addr_be_support> analyzed. Unit <xbic_addr_be_support> generated.
+
+Analyzing generic Entity <xbic_addr_decode> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000011111111111111111000000000000000",
+	                          "0000000000000000000000000000000011111111111111111111111111111111")
+	C_FAMILY = "virtex5"
+	C_SPLB_AWIDTH = 32
+	C_SPLB_NATIVE_DWIDTH = 64
+Entity <xbic_addr_decode> analyzed. Unit <xbic_addr_decode> generated.
+
+Analyzing generic Entity <xbic_addr_cntr> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_ADDR_CNTR_WIDTH = 32
+	C_CACHLINE_ADDR_MODE = 0
+	C_NATIVE_DWIDTH = 64
+	C_PLB_AWIDTH = 32
+	C_SMALLEST_MASTER = 128
+INFO:Xst:2679 - Register <qwdwrds_s_h> in unit <xbic_addr_cntr> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <xbic_addr_cntr> analyzed. Unit <xbic_addr_cntr> generated.
+
+Analyzing generic Entity <xbic_be_reset_gen> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_NATIVE_DWIDTH = 64
+	C_SMALLEST = 128
+Entity <xbic_be_reset_gen> analyzed. Unit <xbic_be_reset_gen> generated.
+
+Analyzing generic Entity <xbic_dbeat_control> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_FAMILY = "virtex5"
+	C_NATIVE_DWIDTH = 64
+WARNING:Xst:753 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_dbeat_control.vhd" line 582: Unconnected output port 'Carry_Out' of component 'counter_f'.
+INFO:Xst:2679 - Register <mult_cnt_sreg<3>> in unit <xbic_dbeat_control> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <xbic_dbeat_control> analyzed. Unit <xbic_dbeat_control> generated.
+
+Analyzing generic Entity <counter_f> in library <proc_common_v3_00_a> (Architecture <imp>).
+	C_FAMILY = "virtex5"
+	C_NUM_BITS = 4
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 214: Instantiating black box module <MUXCY_L>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 237: Instantiating black box module <MUXCY_L>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 244: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 250: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 237: Instantiating black box module <MUXCY_L>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 244: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 250: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 237: Instantiating black box module <MUXCY_L>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 244: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 250: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 237: Instantiating black box module <MUXCY_L>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 244: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 250: Instantiating black box module <FDRE>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 237: Instantiating black box module <MUXCY_L>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 244: Instantiating black box module <XORCY>.
+WARNING:Xst:2211 - "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" line 250: Instantiating black box module <FDRE>.
+Entity <counter_f> analyzed. Unit <counter_f> generated.
+
+Analyzing generic Entity <xbic_data_steer_mirror> in library <xps_bram_if_cntlr_v1_00_b> (Architecture <implementation>).
+	C_SMALLEST_MASTER = 128
+	C_SPLB_DWIDTH = 128
+	C_SPLB_NATIVE_DWIDTH = 64
+	C_STEER_ADDR_WIDTH = 6
+Entity <xbic_data_steer_mirror> analyzed. Unit <xbic_data_steer_mirror> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <Cline_Spec_1DBeat_Case> in unit <xbic_dbeat_control> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <mult_cnt_sreg<2>> in unit <xbic_dbeat_control> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <Cline_special_case1_reg> in unit <xbic_dbeat_control> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <xbic_addr_be_support>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_addr_be_support.vhd".
+WARNING:Xst:647 - Input <PLB_Msize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xbic_addr_be_support> synthesized.
+
+
+Synthesizing Unit <xbic_addr_decode>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_addr_decode.vhd".
+WARNING:Xst:647 - Input <Address_Valid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_In<17:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xbic_addr_decode> synthesized.
+
+
+Synthesizing Unit <xbic_data_steer_mirror>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_data_steer_mirror.vhd".
+WARNING:Xst:647 - Input <Steer_Addr_In<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Steer_Addr_In<4:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <sig_addr_bits_dwrd_wrd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sig_addr_bit_dwrd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <xbic_data_steer_mirror> synthesized.
+
+
+Synthesizing Unit <xbic_be_reset_gen>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_be_reset_gen.vhd".
+WARNING:Xst:647 - Input <Addr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <MSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <xbic_be_reset_gen> synthesized.
+
+
+Synthesizing Unit <xbic_addr_cntr>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_addr_cntr.vhd".
+WARNING:Xst:646 - Signal <qwdwrds_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <master_64_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <master_32_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <master_128_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dblwrds_s_h> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <cacheln_4_s_h>.
+    Found 1-bit register for signal <cacheln_8_s_h>.
+    Found 5-bit register for signal <cline_inc_value_s_h>.
+    Found 5-bit register for signal <flbrst_inc_value_s_h>.
+    Found 1-bit register for signal <flburst_s_h>.
+    Found 2-bit register for signal <msize_s_h>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Found 2-bit register for signal <sig_addr_4_3_s_h>.
+    Found 32-bit register for signal <sig_addr_cntr>.
+    Found 32-bit adder for signal <sig_addr_cntr$addsub0000> created at line 816.
+    Found 8-bit register for signal <sig_be_in_s_h>.
+    Found 5-bit register for signal <sig_cline_slice_cntr>.
+    Found 5-bit adder for signal <sig_cline_slice_cntr$addsub0000> created at line 998.
+    Found 1-bit register for signal <single_s_h>.
+    Found 1-bit register for signal <words_s_h>.
+    Summary:
+	inferred  65 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <xbic_addr_cntr> synthesized.
+
+
+Synthesizing Unit <counter_f>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+WARNING:Xst:646 - Signal <alu_cy<5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <counter_f> synthesized.
+
+
+Synthesizing Unit <xbic_dbeat_control>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_dbeat_control.vhd".
+WARNING:Xst:647 - Input <RNW_In> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <req_init_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <doing_multi_dbeat> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Cline_special_case2_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Burst_special_case2_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16x4-bit ROM for signal <almst_done_flburst_value>.
+    Found 4-bit register for signal <almst_done_comp_value_reg>.
+    Found 1-bit register for signal <Burst_special_case1_reg>.
+    Found 1-bit register for signal <dbeat_cnt_almst_done>.
+    Found 4-bit comparator equal for signal <dbeat_cnt_almst_done_raw$cmp_eq0000> created at line 309.
+    Found 1-bit register for signal <dbeat_cnt_done>.
+    Found 2-bit register for signal <mult_cnt_sreg<0:1>>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <xbic_dbeat_control> synthesized.
+
+
+Synthesizing Unit <xbic_slave_attach_burst>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xbic_slave_attach_burst.vhd".
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrDBus<64:127>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <wait_condition> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sig_xfer_done_dly1> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_rd_data_128> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_internal_rddack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sig_do_cmd_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sig_clr_wrreq> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_clr_wait> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sig_clr_rdbterm> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_clr_rdack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <sig_clear_wrack_dly1> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <sig_clear_rdack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ip2bus_wrack_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ip2bus_rdack_i> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <bus2ip_rnw_i> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <bus2ip_cs_i>.
+    Found 1-bit register for signal <doing_cacheln_reg>.
+    Found 1-bit register for signal <doing_flburst_reg>.
+    Found 1-bit register for signal <doing_single_reg>.
+    Found 1-bit register for signal <sig_force_wrbterm>.
+    Found 1-bit register for signal <sig_mst_id<0>>.
+    Found 128-bit register for signal <sig_rd_dreg>.
+    Found 1-bit register for signal <sig_rd_req_reg>.
+    Found 1-bit register for signal <sig_sl_busy>.
+    Found 6-bit register for signal <sig_steer_addr_reg>.
+    Found 64-bit register for signal <sig_wr_dreg>.
+    Found 1-bit register for signal <sig_wr_req_reg>.
+    Found 1-bit register for signal <sl_mbusy_i<0>>.
+    Found 3-bit register for signal <sl_rdwdaddr_i<1:3>>.
+    Summary:
+	inferred 211 D-type flip-flop(s).
+Unit <xbic_slave_attach_burst> synthesized.
+
+
+Synthesizing Unit <xps_bram_if_cntlr>.
+    Related source file is "/proj/sw/Xilinx/11.1/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_v1_00_b/hdl/vhdl/xps_bram_if_cntlr.vhd".
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <sig_ip2bus_wrack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_ip2bus_rdack> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bus2ip_wrce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bus2ip_rnw> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bus2ip_reset> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sig_bus2ip_rdreq> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bus2ip_rdce> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bus2ip_clk> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bus2ip_burst> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sig_bram_rd_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <xps_bram_if_cntlr> synthesized.
+
+
+Synthesizing Unit <xps_bram_if_cntlr_0_wrapper>.
+    Related source file is "/proj/users/hmnguyen/EDKproject/qmfir_new/hdl/xps_bram_if_cntlr_0_wrapper.vhd".
+Unit <xps_bram_if_cntlr_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x4-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 35
+ 1-bit register                                        : 24
+ 128-bit register                                      : 1
+ 2-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 5-bit register                                        : 3
+ 6-bit register                                        : 1
+ 64-bit register                                       : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <flbrst_inc_value_s_h<0:3>> (without init value) have a constant value of 0 in block <xbic_addr_cntr>.
+WARNING:Xst:2404 -  FFs/Latches <cline_inc_value_s_h<0:3>> (without init value) have a constant value of 0 in block <xbic_addr_cntr>.
+
+Synthesizing (advanced) Unit <xbic_addr_cntr>.
+The following registers are absorbed into accumulator <sig_addr_cntr>: 1 register on signal <sig_addr_cntr>.
+Unit <xbic_addr_cntr> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x4-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 5-bit adder                                           : 1
+# Accumulators                                         : 1
+ 32-bit up loadable accumulator                        : 1
+# Registers                                            : 268
+ Flip-Flops                                            : 268
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <flbrst_inc_value_s_h_3> (without init value) has a constant value of 0 in block <xbic_addr_cntr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <flbrst_inc_value_s_h_2> (without init value) has a constant value of 0 in block <xbic_addr_cntr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cline_inc_value_s_h_3> (without init value) has a constant value of 0 in block <xbic_addr_cntr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cline_inc_value_s_h_2> (without init value) has a constant value of 0 in block <xbic_addr_cntr>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_125> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_61> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_120> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_56> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_97> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_33> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_107> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_43> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_102> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_38> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_108> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_44> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_103> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_39> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_118> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_54> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_113> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_49> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_124> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_60> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_119> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_55> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_96> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_32> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_123> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_59> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_105> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_41> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_100> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_36> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_106> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_42> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_101> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_37> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_116> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_52> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_111> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_47> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_117> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_53> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_112> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_48> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_126> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_62> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_121> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_57> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_98> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_34> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_127> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_63> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_122> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_58> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_104> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_40> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_99> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_35> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_114> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_50> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_109> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_45> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_115> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_51> 
+INFO:Xst:2261 - The FF/Latch <sig_rd_dreg_110> in Unit <xbic_slave_attach_burst> is equivalent to the following FF/Latch, which will be removed : <sig_rd_dreg_46> 
+WARNING:Xst:2677 - Node <sig_addr_4_3_s_h_1> of sequential type is unconnected in block <xbic_addr_cntr>.
+WARNING:Xst:2677 - Node <sig_addr_4_3_s_h_0> of sequential type is unconnected in block <xbic_addr_cntr>.
+WARNING:Xst:2677 - Node <msize_s_h_1> of sequential type is unconnected in block <xbic_addr_cntr>.
+WARNING:Xst:2677 - Node <msize_s_h_0> of sequential type is unconnected in block <xbic_addr_cntr>.
+WARNING:Xst:2677 - Node <sig_steer_addr_reg_5> of sequential type is unconnected in block <xbic_slave_attach_burst>.
+WARNING:Xst:2677 - Node <sig_steer_addr_reg_4> of sequential type is unconnected in block <xbic_slave_attach_burst>.
+WARNING:Xst:2677 - Node <sig_steer_addr_reg_0> of sequential type is unconnected in block <xbic_slave_attach_burst>.
+WARNING:Xst:1710 - FF/Latch <sig_cline_slice_cntr_4> (without init value) has a constant value of 0 in block <xbic_addr_cntr>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sig_cline_slice_cntr_3> (without init value) has a constant value of 0 in block <xbic_addr_cntr>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <xps_bram_if_cntlr_0_wrapper> ...
+
+Optimizing unit <xbic_addr_cntr> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <xbic_dbeat_control> ...
+
+Optimizing unit <xbic_slave_attach_burst> ...
+
+Optimizing unit <xps_bram_if_cntlr> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS> in Unit <xps_bram_if_cntlr_0_wrapper> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0_wrapper> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_SET_SLBUSY> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 255
+ Flip-Flops                                            : 255
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/xps_bram_if_cntlr_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 572
+
+Cell Usage :
+# BELS                             : 280
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 4
+#      LUT2                        : 13
+#      LUT3                        : 53
+#      LUT4                        : 26
+#      LUT5                        : 43
+#      LUT6                        : 63
+#      MUXCY                       : 31
+#      MUXCY_L                     : 6
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 37
+# FlipFlops/Latches                : 255
+#      FD                          : 4
+#      FDR                         : 100
+#      FDRE                        : 149
+#      FDRSE                       : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vfx130tff1738-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             255  out of  81920     0%  
+ Number of Slice LUTs:                  203  out of  81920     0%  
+    Number used as Logic:               203  out of  81920     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    313
+   Number with an unused Flip Flop:      58  out of    313    18%  
+   Number with an unused LUT:           110  out of    313    35%  
+   Number of fully used LUT-FF pairs:   145  out of    313    46%  
+   Number of unique control sets:        27
+
+IO Utilization: 
+ Number of IOs:                         572
+ Number of bonded IOBs:                   0  out of    840     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                              | Load  |
+-----------------------------------+------------------------------------------------------------------------------------+-------+
+BRAM_Clk                           | NONE(xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_rd_req_reg)| 255   |
+-----------------------------------+------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.549ns (Maximum Frequency: 281.793MHz)
+   Minimum input arrival time before clock: 4.144ns
+   Maximum output required time after clock: 2.224ns
+   Maximum combinational path delay: 0.000ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BRAM_Clk'
+  Clock period: 3.549ns (frequency: 281.793MHz)
+  Total number of paths / destination ports: 4988 / 435
+-------------------------------------------------------------------------
+Delay:               3.549ns (Levels of Logic = 32)
+  Source:            xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy (FF)
+  Destination:       xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_0 (FF)
+  Source Clock:      BRAM_Clk rising
+  Destination Clock: BRAM_Clk rising
+
+  Data Path: xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy to xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            72   0.471   0.845  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_sl_busy)
+     LUT4:I1->O           21   0.094   0.588  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_init_db_cntr1_1 (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_init_db_cntr1)
+     LUT4:I3->O            1   0.094   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_lut<2> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_lut<2>)
+     MUXCY:S->O            1   0.372   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<2> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<2>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<3> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<3>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<4> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<4>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<5> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<5>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<6> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<6>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<7> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<7>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<8> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<8>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<9> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<9>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<10> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<10>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<11> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<11>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<12> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<12>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<13> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<13>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<14> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<14>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<15> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<15>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<16> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<16>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<17> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<17>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<18> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<18>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<19> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<19>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<20> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<20>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<21> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<21>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<22> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<22>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<23> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<23>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<24> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<24>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<25> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<25>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<26> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<26>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<27> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<27>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<28> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<28>)
+     MUXCY:CI->O           1   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<29> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<29>)
+     MUXCY:CI->O           0   0.026   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<30> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_cy<30>)
+     XORCY:CI->O           1   0.357   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Maccum_sig_addr_cntr_xor<31> (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/Result<31>)
+     FDRE:D                   -0.018          xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_addr_cntr_0
+    ----------------------------------------
+    Total                      3.549ns (2.116ns logic, 1.433ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk'
+  Total number of paths / destination ports: 3150 / 557
+-------------------------------------------------------------------------
+Offset:              4.144ns (Levels of Logic = 5)
+  Source:            PLB_ABus<5> (PAD)
+  Destination:       xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS (FF)
+  Destination Clock: BRAM_Clk rising
+
+  Data Path: PLB_ABus<5> to xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.094   0.480  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_good_request117 (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_good_request117)
+     LUT4:I3->O            1   0.094   0.789  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_good_request127 (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_good_request127)
+     LUT6:I2->O            5   0.094   1.091  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_good_request152 (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_good_request)
+     LUT6:I0->O            2   0.094   0.581  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/rearb_condition1 (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/rearb_condition)
+     LUT3:I1->O            2   0.094   0.000  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_req1 (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/sig_wr_req)
+     FDRE:D                   -0.018          xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_FLOP_WRACK_2BUS
+    ----------------------------------------
+    Total                      4.144ns (1.203ns logic, 2.941ns route)
+                                       (29.0% logic, 71.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BRAM_Clk'
+  Total number of paths / destination ports: 329 / 246
+-------------------------------------------------------------------------
+Offset:              2.224ns (Levels of Logic = 2)
+  Source:            xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cacheln_4_s_h (FF)
+  Destination:       BRAM_WEN<0> (PAD)
+  Source Clock:      BRAM_Clk rising
+
+  Data Path: xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cacheln_4_s_h to BRAM_WEN<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.471   0.811  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cacheln_4_s_h (xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/cacheln_4_s_h)
+     LUT4:I0->O            9   0.094   0.754  xps_bram_if_cntlr_0/INCLUDE_BURST_SUPPORT.I_SLAVE_BURST_ATTACH/I_ADDR_CNTR/sig_address_out_29_mux00001 (BRAM_Addr<29>)
+     LUT6:I3->O            0   0.094   0.000  xps_bram_if_cntlr_0/sig_bram_wr_enable_7_and00001 (BRAM_WEN<7>)
+    ----------------------------------------
+    Total                      2.224ns (0.659ns logic, 1.565ns route)
+                                       (29.6% logic, 70.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               0.000ns (Levels of Logic = 0)
+  Source:            SPLB_Clk (PAD)
+  Destination:       BRAM_Clk (PAD)
+
+  Data Path: SPLB_Clk to BRAM_Clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ----------------------------------------
+    Total                      0.000ns (0.000ns logic, 0.000ns route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 5.67 secs
+ 
+--> 
+
+
+Total memory usage is 187856 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   99 (   0 filtered)
+Number of infos    :   41 (   0 filtered)
+

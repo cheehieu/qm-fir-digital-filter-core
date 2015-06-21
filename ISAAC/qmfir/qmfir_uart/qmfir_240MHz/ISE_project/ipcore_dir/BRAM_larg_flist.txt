@@ -1,0 +1,15 @@
+# Output products list for <BRAM_larg>
+BRAM_larg.asy
+BRAM_larg.gise
+BRAM_larg.ise
+BRAM_larg.ngc
+BRAM_larg.v
+BRAM_larg.veo
+BRAM_larg.xco
+BRAM_larg.xise
+BRAM_larg_flist.txt
+BRAM_larg_readme.txt
+BRAM_larg_xdb/tmp/
+BRAM_larg_xmdf.tcl
+_xmsgs/
+blk_mem_gen_ds512.pdf

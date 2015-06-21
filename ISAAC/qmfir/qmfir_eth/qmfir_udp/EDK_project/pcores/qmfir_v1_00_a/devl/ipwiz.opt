@@ -1,0 +1,13 @@
+-batch 
+-create qmfir 
+-ver 1.00.a 
+-dir "/proj/users/hmnguyen/EDKproject/qmfir_2new" 
+-lang verilog 
+-bus plbv46 s 
+-wfifo 4 512 
+-isc 3 
+-intrn 1 1 
+-reg 4 
+-mem 3 
+-xps 
+-driver 

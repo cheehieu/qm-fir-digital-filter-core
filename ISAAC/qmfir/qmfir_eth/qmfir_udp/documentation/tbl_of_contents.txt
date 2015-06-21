@@ -1,0 +1,61 @@
+1.0 introduction
+1.1 purpose of document
+1.2 overview
+1.3 features
+1.4 implementation details
+1.5 resource utilization
+
+2.0 qm-fir background information
+2.1 filter architecture
+
+3.0 hardware overview
+3.1 block diagram
+3.2 MHS
+3.3 HDL
+3.4 interface signals
+3.5 parameters
+3.6 port definitions
+3.7 registers
+3.7.1 ESCR register
+3.7.2 WPTR register
+3.7.3 ICNT register
+3.7.4 OCNT register
+3.8 interrupts
+3.9 overall system data flow
+
+4.0 software overview
+4.1 testbed data flow
+4.2 matlab data flow
+4.3 matlab gui
+
+5.0 power, mass, and volume
+5.1 power consumption
+5.2 order of power application
+5.3 mass
+5.4 volume
+
+6.0 operating conditions
+7.0 FPGA Port Definitions
+8.0 Board Level Pin Outs
+9.0 Acronyms
+
+10.0 applicable documents
+10.1 data sheets
+10.2 jpl documents
+
+
+
+Figure 2.1	QM-FIR Digital Filter Block Diagram
+Figure 2.2	QM-FIR Digital Filter Block Diagram for HDL Modules
+Figure 3.1	Block Diagram Showing Hardware Configuration for QM-FIR Digital Filter Core
+Figure 3.2	Interface Blocks for QM and FIRDecim1 Modules
+Figure 3.3	Overall System Data Flow
+Figure 4.1	Testbed Setup
+Figure 4.2	Matlab Data Flow
+Figure 4.3	Matlab GUI
+Figure 4.4	Matlab GUI Displaying Output
+
+
+Table 1.		qmfir Interface Signals
+Table 2.		qmfir Registers for Ethernet Implementation
+

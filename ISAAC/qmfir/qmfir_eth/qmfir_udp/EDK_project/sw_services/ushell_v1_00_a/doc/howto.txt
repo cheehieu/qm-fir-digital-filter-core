@@ -1,0 +1,102 @@
+**************************************************************************
+* uShell - A minimalist shell for the Xilinx Virtex PPC-class 
+* uProcessors
+*
+* ORIGINAL AUTHOR: Thomas Werne
+* COMPANY: Jet Propulsion Laboratory
+* VERSION: 1.00
+*
+* File: howto.txt
+* $Author: werne $
+* $Date: 2010-02-08 12:07:53 -0800 (Mon, 08 Feb 2010) $
+* $Rev: 58 $
+*
+* Copyright 2009, 2010, by the California Institute of Technology.  ALL
+* RIGHTS RESERVED.  United States Government Sponsorship acknowledged.
+* Any commercial use must be negotiated with the Office of Technology
+* Transfer at the California Institute of Technology.
+*
+* This software may be subject to U.S. export control laws and
+* regulations.  By accepting this document, the user agrees to comply
+* with all U.S. export laws and regulations.  User has the
+* responsibility to obtain export licenses, or other export authority
+* as may be required before exporting such information to foreign
+* countries or providing access to foreign persons.
+**************************************************************************
+
+- Overview
+----------------
+This document describes the structure of the uShell project and
+explains how to build a uShell executable.
+
+- Getting Started
+----------------------
+The uShell library can be inserted into a particular project or into
+your Xilinx design library which makes it visible to all your
+projects.  To insert it into a single project, save a copy of the code
+in $XPS_PROJ_DIR/sw_services/ushell_v1_00_a.  To make it available to
+all projects, save a copy of the code in
+$EDK_INSTALL_DIR/sw/ThirdParty/sw_services/ushell_v0_95_a.
+
+To add uShell to a project, insert the code as described above, then
+restart XPS.  Go to Software Platform Settings, and check the uShell
+box.  Then go to the OS and Libraries page:
+1) Specify the include directories for your project.  You can give
+multiple directories as a semicolon-delimited string.  The directories
+need to be absolute.
+2) Turn off functions you don't want.
+3) Specify if the project is interrupt-driven.
+
+The program entry point main() is defined by uShell, so do not declare a
+main function in your programs.  
+
+To add user-callable functions to the uShell, declare them exactly as you
+normally would in header (.h) files, but prefixed by the string USHELL.  
+If the return value is not an integer, you may get a warning when you
+build the library (although currently nothing is done with the return
+value).  The uShell build environment will include ALL functions
+declared with USHELL in EVERY .h file in the directories you specify.
+
+Function parameters extracted from the command line function call will
+be passed as strings (null-terminated character arrays) to your
+function via the same mechanism found in standard C programming.  That
+is, the first parameter passed to any function is the number of
+function arguments, and the second parameter is an array of pointers
+to strings.  Just like with standard programs, argv[0] holds the name of
+the function that is being called.  Return values are ignored.  There
+is a default limit of 6 parameters imposed on all function calls.  If
+this is insufficient for your needs, it can be increased as described
+in a later section.
+
+Example:
+    USHELL int my_function();
+    USHELL void my_function_with_arguments(int argc, char **argv);
+
+- Building the Project
+------------------------------------
+Run libgen to build the uShell library.  You need to rerun this every
+time you add or remove a USHELL function.
+
+In the compiler options for the project, add "ushell" as a library to
+link against.
+
+- Using the Project
+------------------------------------
+Once your executable is built and downloaded to the board, you should
+be welcomed by a uShell> prompt.  Type "help" to see a list of shell
+commands, and "list" to see a list of all possible function calls.  To
+use one of these functions, simply type its name at the prompt and
+press "Return".
+
+- Information
+------------------------------------
+With all of its features enabled, uShell consumes ~11.3Kb of RAM.  If
+you turn off all extra functionality, you can bring the footprint down
+to ~4.8Kb.  Even without all the built-in functions, you can still
+call user-defined functions.  If you are space-starved, consider
+removing help (896 B), history (916 B), exec (580 B).
+
+
+
+Thomas Werne
+04 Jan 2010

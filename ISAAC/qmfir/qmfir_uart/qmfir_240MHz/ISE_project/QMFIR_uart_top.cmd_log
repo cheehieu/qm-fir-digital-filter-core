@@ -1,0 +1,9 @@
+xst -ise "/home/hmnguyen/qmfir_uart/qmfir_uart.ise" -intstyle ise -ifn "/home/hmnguyen/qmfir_uart/QMFIR_uart_top.xst" -ofn "/home/hmnguyen/qmfir_uart/QMFIR_uart_top.syr" 
+xst -ise "/home/hmnguyen/qmfir_uart/qmfir_uart.ise" -intstyle ise -ifn "/home/hmnguyen/qmfir_uart/QMFIR_uart_top.xst" -ofn "/home/hmnguyen/qmfir_uart/QMFIR_uart_top.syr" 
+ngdbuild -ise "qmfir_uart.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc5vfx130t-ff1738-1 QMFIR_uart_top.ngc QMFIR_uart_top.ngd  
+ngdbuild -ise "qmfir_uart.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc5vfx130t-ff1738-1 QMFIR_uart_top.ngc QMFIR_uart_top.ngd  
+ngdbuild -ise "qmfir_uart.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc5vfx130t-ff1738-1 QMFIR_uart_top.ngc QMFIR_uart_top.ngd  
+map -ise "qmfir_uart.ise" -intstyle ise -p xc5vfx130t-ff1738-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o QMFIR_uart_top_map.ncd QMFIR_uart_top.ngd QMFIR_uart_top.pcf 
+par -ise "qmfir_uart.ise" -w -intstyle ise -ol high -t 1 QMFIR_uart_top_map.ncd QMFIR_uart_top.ncd QMFIR_uart_top.pcf 
+trce -ise "/home/hmnguyen/qmfir_uart/qmfir_uart.ise" -intstyle ise -v 3 -s 1 -fastpaths -xml QMFIR_uart_top.twx QMFIR_uart_top.ncd -o QMFIR_uart_top.twr QMFIR_uart_top.pcf -ucf QMFIR_uart_top.ucf 
+bitgen -ise "qmfir_uart.ise" -intstyle ise -f QMFIR_uart_top.ut QMFIR_uart_top.ncd 
